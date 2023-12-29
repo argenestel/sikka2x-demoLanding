@@ -68,30 +68,31 @@ const aspectRatios = [
       const chosenAspectRatio = aspectRatios.find(
         ratio => windowWidth >= ratio.width * 100
       );
-  
+      
       // Set the aspect ratio state
       if (chosenAspectRatio) {
         setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
-      } else {
-        // If no aspect ratio is found, use the default
-        setAspectRatio([16, window.innerHeight]);
-      }
+      } 
     };
     // Initial check on mount
- 
+    // handleResize();
     // Add event listener for window resize
     window.addEventListener("resize", handleResize);
-    window.addEventListener("resize", updateAspectRatio);
+    // window.addEventListener("resize2", updateAspectRatio);
     // Remove event listener on component unmount
+
+    updateAspectRatio()
+
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("resize", updateAspectRatio);
+      // window.removeEventListener("resize2", updateAspectRatio);
     };
   }, []);
 
   return (
     <>
       <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden">
+
         { !isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
         {/* <SectionHeader
@@ -126,15 +127,17 @@ const aspectRatios = [
             >
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="bg-white  shadow-solid-9 dark:shadow-none dark:bg-blacksection">
-                    <div style={{ position: 'relative'}} className=" w-full">
+                    <div className="bg-white shadow-solid-9 dark:shadow-none dark:bg-blacksection">
+                    <div style={{ position: 'relative', paddingTop: `${100/aspectRatio[1] * aspectRatio[0]}%`}} className=" w-full">
+                        <div className="-z-10">-</div>
+                        {/* for some reason this is not rendering */}
+                        
                         <Image
                           src={image}
                           alt="testimonial"
                           fill
-                  
-                          className="rounded-lg"
-                        />
+                          className="absolute top-0 left-0 object-cover z-10"
+                          />
                       </div>
                   </div>
                 </SwiperSlide>
@@ -260,9 +263,8 @@ const aspectRatios = [
                         <Image
                           src={image}
                           alt="testimonial"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-lg"
+                          fill
+                          className="rounded-lg object-cover"
                         />
                       </div>
                   </div>
