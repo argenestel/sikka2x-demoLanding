@@ -39,12 +39,7 @@ const Hero = () => {
     "/images/hero/Play.jpg",
     "/images/hero/Updatefund.jpg"
   ]
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-    const updateAspectRatio = () => {
-      // Define your aspect ratios here
+       // Define your aspect ratios here
 const aspectRatios = [
   // Common Mobile Aspect Ratios
   { height: 16, width: 9 },   // Standard widescreen
@@ -63,8 +58,11 @@ const aspectRatios = [
   { height: 21, width: 9 },   // Unusual, but seen in some devices
   // Add more aspect ratios as needed
 ];
-
-  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+    const updateAspectRatio = () => {
       // Choose an aspect ratio based on window size
       const windowWidth = window.innerWidth;
       const chosenAspectRatio = aspectRatios.find(
@@ -73,7 +71,7 @@ const aspectRatios = [
   
       // Set the aspect ratio state
       if (chosenAspectRatio) {
-        setAspectRatio([chosenAspectRatio.width, chosenAspectRatio.height]);
+        setAspectRatio([window.innerWidth, window.innerHeight]);
       }
     };
     // Initial check on mount
@@ -126,7 +124,7 @@ const aspectRatios = [
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
                     <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark">
-                    <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[0] * aspectRatio[1]}%`}} className=" w-full">
+                    <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[0] * aspectRatio[1]/1.3}%`}} className=" w-full">
                         <Image
                           src={image}
                           alt="testimonial"
