@@ -9,12 +9,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { testimonials } from "../Testimonial/testimonialData";
 import SectionHeader from "../Common/SectionHeader";
+import "../DownloadNow/DownloadNow.css";
+import { PiAndroidLogo } from "react-icons/pi";
+import { IoLogoAndroid } from "react-icons/io5";
 
 // import { motion } from "framer-motion";
 
 const Hero = () => {
   // const [email, setEmail] = useState("");
   const [isDesktop, setIsDesktop] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   // const [isMobile, setIsMobile] = useState(false);
   // useEffect(() => {
   //   const handleResize = () => {
@@ -33,7 +38,12 @@ const Hero = () => {
   //   };
   // }, []);
   const [aspectRatio, setAspectRatio] = useState([16, 9]); // Default aspect ratio
-
+  const OpenModel = () => {
+    setIsModalOpen(true);
+  };
+  const CloseModel = () => {
+    setIsModalOpen(false);
+  };
   const placeHolder = [
     "/images/hero/quiz.jpg",
     "/images/hero/Play.jpg",
@@ -80,7 +90,7 @@ const aspectRatios = [
     window.addEventListener("resize", handleResize);
     // window.addEventListener("resize2", updateAspectRatio);
     // Remove event listener on component unmount
-
+    handleResize()
     updateAspectRatio()
 
     return () => {
@@ -143,7 +153,7 @@ const aspectRatios = [
                 </SwiperSlide>
               ))}
             </Swiper>
-         
+        
 
           </div>
             <div className=" md:w-1/2">
@@ -180,13 +190,13 @@ const aspectRatios = [
                       placeholder="Enter your email address"
                       className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
                     /> */}
-                    <Link
+                    <div
                       aria-label="signup to newsletter"
-                      className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5"
-                      href="/auth/signup"
-                    >
-                     Download Now
-                    </Link>
+                      className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5"
+                      onClick={()=>console.log('clicked')}
+>
+                     <IoLogoAndroid className="w-7 h-7 mr-2.5"/>Download Now
+                    </div>
                   </div>
                 </form>
 
@@ -195,7 +205,6 @@ const aspectRatios = [
                 </p>
               </div>
             </div>
-
             <div className="animate_right md:w-1/2 hidden lg:block">
               <div className="relative 2xl:-mr-7.5">
                 <Image

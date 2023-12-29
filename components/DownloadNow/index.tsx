@@ -5,12 +5,15 @@ import './DownloadNow.css'
 import { CheckmarkIcon } from 'react-hot-toast';
 import {IoDownloadSharp, IoReloadCircle, IoShieldCheckmarkSharp} from 'react-icons/io5'
 import { PiNumberCircleZeroFill } from "react-icons/pi";
+import Modal from '../Modal/Modal';
 
 function DownloadNow() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModelDownload = () => {
+    
     // Set loading state to true
     setIsLoading(true);
 
@@ -20,13 +23,19 @@ function DownloadNow() {
       setIsLoading(false);
 
       // TODO: Add logic to open your modal
-    }, 2000); // Simulated 2 seconds download time
-
+    }, 10000); // Simulated 2 seconds download time
+    setIsModalOpen(true);
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/apk/sikka.apk";
+    downloadLink.download = "sikka.apk";
+    downloadLink.click();
   };
   const closeModal = () => {
     // Close the modal
     setIsModalOpen(false);
   };
+
+
   useEffect(() => {
     const toggleVisibility = () => {
       // Display the button after scrolling for 150 pixels
@@ -60,7 +69,7 @@ function DownloadNow() {
     <>
     { isMobile &&
     <div className="fixed bottom-4 right-8 z-[99]">
-
+      {isModalOpen && <Modal onClose={closeModal} />}
         <div
          
           aria-label="scroll to top"
