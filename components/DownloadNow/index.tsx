@@ -3,18 +3,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import './DownloadNow.css'
 import { CheckmarkIcon } from 'react-hot-toast';
-import {IoShieldCheckmarkSharp} from 'react-icons/io5'
+import {IoDownloadSharp, IoReloadCircle, IoShieldCheckmarkSharp} from 'react-icons/io5'
 import { PiNumberCircleZeroFill } from "react-icons/pi";
 
 function DownloadNow() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const showModelDownload = () => {
-    // Open modal and download a file
-    // Add your logic here
+    // Set loading state to true
+    setIsLoading(true);
+
+    // Simulate a download delay (you can replace this with your actual download logic)
+    setTimeout(() => {
+      // After download, set loading state back to false
+      setIsLoading(false);
+
+      // TODO: Add logic to open your modal
+    }, 2000); // Simulated 2 seconds download time
 
   };
-
+  const closeModal = () => {
+    // Close the modal
+    setIsModalOpen(false);
+  };
   useEffect(() => {
     const toggleVisibility = () => {
       // Display the button after scrolling for 150 pixels
@@ -59,13 +71,20 @@ function DownloadNow() {
         >
           <div className='text-white text-lg mx-auto text-center font-bold blinking-text' style={{ userSelect: "none" }}>
 Zero Commision app</div>
-            <div
-             onClick={showModelDownload}
-             className='rotate-button shining-button rounded-full m-3 p-2 mx-auto text-center text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho'
-             style={{ userSelect: "none" }}
-             >
-                          Download Now
-            </div>
+<div
+  onClick={showModelDownload}
+  className={`zooming-element shining-button flex items-center justify-center rounded-full m-3 p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
+  
+  ${
+    isLoading ? "" : ""
+  }`}
+
+  style={{ userSelect: "none" }}
+>
+  {isLoading ? (<IoReloadCircle size={25} color={'#fff'} className='text-center spin' />) : (<IoDownloadSharp size={25} color={'#fff'} className='text-center' />)}
+  
+      <span className="ml-2">{isLoading ? "Downloading..." : "Download Now"}</span>
+      </div>
             <div className="flex justify-around">
           {/* 100% Secure */}
           <div className="flex flex-row items-center text-white text-sm">
