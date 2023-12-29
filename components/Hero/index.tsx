@@ -78,14 +78,14 @@ const aspectRatios = [
       }
     };
     // Initial check on mount
-    handleResize();
-    updateAspectRatio();
+ 
     // Add event listener for window resize
     window.addEventListener("resize", handleResize);
-
+    window.addEventListener("resize", updateAspectRatio);
     // Remove event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", updateAspectRatio);
     };
   }, []);
 
@@ -127,12 +127,12 @@ const aspectRatios = [
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
                     <div className="bg-white  shadow-solid-9 dark:shadow-none dark:bg-blacksection">
-                    <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[0] * aspectRatio[1]/1.3}%`}} className=" w-full">
+                    <div style={{ position: 'relative'}} className=" w-full">
                         <Image
                           src={image}
                           alt="testimonial"
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                  
                           className="rounded-lg"
                         />
                       </div>
