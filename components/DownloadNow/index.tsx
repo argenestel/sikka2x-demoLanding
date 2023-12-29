@@ -52,13 +52,16 @@ function DownloadNow() {
         <div
          
           aria-label="scroll to top"
-          className="fixed bottom-0 right-0 p-2 z-[99] w-full  items-center justify-center bg-primaryho  text-white shadow-md transition duration-300 ease-in-out"
+          className="fixed bottom-0 right-0 p-2 z-[99] w-full  items-center justify-center 
+            text-white shadow-md transition duration-300 ease-in-out
+            bg-gradient-to-t from-sikkaMaroonGrad  via-sikkaMaroon to-transparent ...
+            "
         >
-          <div className='text-white mx-auto text-center font-bold blinking-text' style={{ userSelect: "none" }}>
+          <div className='text-white text-lg mx-auto text-center font-bold blinking-text' style={{ userSelect: "none" }}>
 Zero Commision app</div>
             <div
              onClick={showModelDownload}
-             className='rotate-button shining-button rounded-full m-3 p-2 mx-auto text-center text-lg text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho'
+             className='rotate-button shining-button rounded-full m-3 p-2 mx-auto text-center text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho'
              style={{ userSelect: "none" }}
              >
                           Download Now

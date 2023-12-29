@@ -71,7 +71,10 @@ const aspectRatios = [
   
       // Set the aspect ratio state
       if (chosenAspectRatio) {
-        setAspectRatio([window.innerWidth, window.innerHeight]);
+        setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
+      } else {
+        // If no aspect ratio is found, use the default
+        setAspectRatio([16, window.innerHeight]);
       }
     };
     // Initial check on mount
@@ -90,7 +93,7 @@ const aspectRatios = [
     <>
       <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden">
         { !isDesktop ? (
-        <div className="mx-auto max-w-c-1390 px-2 md:px-4 2xl:px-0">
+        <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
         {/* <SectionHeader
               headerInfo={{
                 title: `100% `,
@@ -103,8 +106,8 @@ const aspectRatios = [
             <div className="swiper testimonial-01 ">
             {/* <!-- Additional required wrapper --> */}
             <Swiper
-              spaceBetween={5}
-              slidesPerView={2}
+              spaceBetween={0}
+              slidesPerView={1}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
@@ -123,7 +126,7 @@ const aspectRatios = [
             >
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark">
+                    <div className="bg-white  shadow-solid-9 dark:shadow-none dark:bg-blacksection">
                     <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[0] * aspectRatio[1]/1.3}%`}} className=" w-full">
                         <Image
                           src={image}

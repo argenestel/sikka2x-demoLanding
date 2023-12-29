@@ -35,7 +35,7 @@ export default function RootLayout({
             {children}
             {/* <Footer /> */}
             <DownloadNow />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
             
         </ThemeProvider>
       </body>

@@ -36,6 +36,8 @@ module.exports = {
       alabaster: "#FBFBFB",
       zumthor: "#EDF5FF",
       socialicon: "#D1D8E0",
+      sikkaMaroon: "#590101",
+      sikkaMaroonGrad: "#A50101"
     },
     extend: {
       fontSize: {
