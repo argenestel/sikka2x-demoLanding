@@ -1,0 +1,35 @@
+/* DownloadNow.css */
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+.blinking-text {
+  animation: blink 1.5s infinite;
+}
+
+.shining-button {
+  background: linear-gradient(90deg, #7ED56F, #28B485); /* Change these colors to your desired vibrant green shades */
+  background-size: 200% auto;
+  color: #fff;
+  transition: background-position 0.5s;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+.blinking-icon {
+  animation: blink 1.5s infinite;
+}
