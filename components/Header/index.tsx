@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={` left-0 top-0 w-full z-99999 py-4 bg-white dark:bg-gradient-to-r dark:from-sikkaMaroon  dark:to-sikkaMaroonGrad ...  transition duration-100}`}
+      className={` left-0 top-0 w-full z-99999 py-4 bg-white dark:bg-sikkaMaroon dark:to-sikkaMaroonGrad  dark:from-sikkaMaroon ...  transition duration-100}`}
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
         <div className="w-full lg:w-1/4 flex items-center justify-between">

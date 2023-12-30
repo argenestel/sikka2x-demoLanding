@@ -45,9 +45,9 @@ const Hero = () => {
     setIsModalOpen(false);
   };
   const placeHolder = [
-    "/images/hero/quiz.jpg",
-    "/images/hero/Play.jpg",
-    "/images/hero/Updatefund.jpg"
+    "/images/hero/testQuiz2.png",
+    "/images/hero/testQuiz2.png",
+    "/images/hero/testQuiz2.png"
   ]
        // Define your aspect ratios here
 const aspectRatios = [
@@ -101,7 +101,7 @@ const aspectRatios = [
 
   return (
     <>
-      <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden">
+      <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
 
         { !isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
@@ -134,10 +134,11 @@ const aspectRatios = [
                   slidesPerView: 2,
                 },
               }}
+             
             >
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="bg-white shadow-solid-9 dark:shadow-none dark:bg-blacksection">
+                    <div className="bg-white shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
                     <div style={{ position: 'relative', paddingTop: `${100/aspectRatio[1] * aspectRatio[0]}%`}} className=" w-full">
                         <div className="-z-10">-</div>
                         {/* for some reason this is not rendering */}
@@ -153,8 +154,15 @@ const aspectRatios = [
                 </SwiperSlide>
               ))}
             </Swiper>
-        
-
+            <div className="py-8 justify-center bg-gradient-to-b via-sikkaMaroon from-sikkaMaroonGrad to-transparent h-36">
+  <div className="flex justify-center items-center z-10">
+    {/* <div className="flex items-center bg-white p-4 rounded-lg">
+      <Image src="/images/logo/gpay.png" alt="GPay Logo" width={50} height={50} className="mr-2" />
+      <Image src="/images/logo/phonepe.png" alt="phonepe Logo" width={50} height={50} className="ml-2" />
+    </div> */}
+  </div>
+</div>
+         
           </div>
             <div className=" md:w-1/2">
 
@@ -165,7 +173,7 @@ const aspectRatios = [
 
           </div>
         </div> ):(
-          <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+          <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 ">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
@@ -267,7 +275,7 @@ const aspectRatios = [
             >
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark">
+                    <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
                     <div style={{ position: 'relative', paddingTop: '133.33%' }} className="w-full">
                         <Image
                           src={image}

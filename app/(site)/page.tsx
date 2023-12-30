@@ -15,6 +15,7 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "sikka2x - Expert Mock Interviews and Peer Learning Platform",
@@ -42,6 +43,19 @@ export default function Home() {
 
       {/* <Blog /> */}
       <Footer />
+     
+    <div className="container">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-R0RR6G0308');
+        `}
+      </Script>
+</div>
     </main>
   );
 }
