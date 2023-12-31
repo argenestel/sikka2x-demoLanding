@@ -63,7 +63,7 @@ const Testimonial = () => {
                   alt="starRating"
                   width={200}
                   height={200}
-                  className="rounded-lg w-full"
+                  className="rounded-lg w-full md:hidden xl:hidden"
                 />
               </div>
             </div>
