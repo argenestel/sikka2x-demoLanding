@@ -5,7 +5,7 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 const SingleBlogPage = async () => {
   return (
     <>
-      <title>{`Blog Details - sikka2x`}</title>
+      <title>{`Blog Details - Sikka2x`}</title>
       <section className="pt-35 lg:pt-45 xl:pt-50 pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col-reverse lg:flex-row gap-7.5 xl:gap-12.5">

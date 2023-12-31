@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Error Page - sikka2x",
+  title: "Error Page - Sikka2x",
   description: "Not Found",
   // other metadata
 };

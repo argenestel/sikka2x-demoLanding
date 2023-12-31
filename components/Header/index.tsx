@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { FaStar } from "react-icons/fa";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -49,6 +50,15 @@ const Header = () => {
               className="w-full dark:hidden"
             />
           </a>
+<div className="flex md:hidden xl:hidden">
+<div className="relative mr-8 mt-2.5">
+          <div
+        className="flex bg-gradient-to-r from-sikkaGold2 to-sikkaGold text-sikkaMaroon font-bold rounded-xl py-1 px-4 absolute top-0 right-0 -mt-4 -mr-4"
+          >
+            <FaStar className="m-1"/> 
+            4.9/5
+          </div>
+        </div>
 
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -56,6 +66,7 @@ const Header = () => {
             className="lg:hidden block"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
+            
             <span className="block relative cursor-pointer w-5.5 h-5.5">
               <span className="block absolute w-full h-full">
                 <span
@@ -88,6 +99,7 @@ const Header = () => {
               </span>
             </span>
           </button>
+          </div>
           {/* <!-- Hamburger Toggle BTN --> */}
         </div>
 

@@ -37,7 +37,10 @@ module.exports = {
       zumthor: "#EDF5FF",
       socialicon: "#D1D8E0",
       sikkaMaroon: "#590101",
-      sikkaMaroonGrad: "#A50101"
+      sikkaMaroonGrad: "#A50101",
+      sikkaGold: "#EECA45",
+      sikkaGold2: "#D1961F",
+      sikkaGold3: "#EECA45"
     },
     extend: {
       fontSize: {

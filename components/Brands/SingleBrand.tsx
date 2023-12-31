@@ -28,17 +28,18 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         className="animate_top block relative h-10 mx-w-full w-[98px]"
       >
         <Image
-          className="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+          className="opacity-100 transition-all duration-300 hover:opacity-90 dark:hidden"
           src={image}
           alt={name}
           fill
         />
         <Image
-          className="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+          className="hidden opacity-100 transition-all duration-300 hover:opacity-100 dark:block"
           src={imageLight}
           alt={name}
           fill
         />
+
       </motion.a>
     </>
   );

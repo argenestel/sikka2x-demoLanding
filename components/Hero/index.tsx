@@ -101,7 +101,7 @@ const aspectRatios = [
 
   return (
     <>
-      <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
+      <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
 
         { !isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
@@ -138,30 +138,28 @@ const aspectRatios = [
             >
               {placeHolder.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="bg-white shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
+                    <div className="bg-transparent shadow-solid-9 dark:shadow-none"
+                    >
                     <div style={{ position: 'relative', paddingTop: `${100/aspectRatio[1] * aspectRatio[0]}%`}} className=" w-full">
-                        <div className="-z-10">-</div>
+                        <div className="-z-10">.</div>
                         {/* for some reason this is not rendering */}
                         
                         <Image
                           src={image}
                           alt="testimonial"
                           fill
-                          className="absolute top-0 left-0 object-cover z-10"
+                          className="absolute top-0 left-0 object-cover z-10 "
                           />
                       </div>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="py-8 justify-center bg-gradient-to-b via-sikkaMaroon from-sikkaMaroonGrad to-transparent h-36">
+            {/* <div className="py-8 justify-center bg-gradient-to-b via-sikkaMaroon from-sikkaMaroonGrad to-transparent h-36">
   <div className="flex justify-center items-center z-10">
-    {/* <div className="flex items-center bg-white p-4 rounded-lg">
-      <Image src="/images/logo/gpay.png" alt="GPay Logo" width={50} height={50} className="mr-2" />
-      <Image src="/images/logo/phonepe.png" alt="phonepe Logo" width={50} height={50} className="ml-2" />
-    </div> */}
+
   </div>
-</div>
+</div> */}
          
           </div>
             <div className=" md:w-1/2">
@@ -253,7 +251,7 @@ const aspectRatios = [
             {/* <!-- Additional required wrapper --> */}
             <Swiper
               spaceBetween={50}
-              slidesPerView={2}
+              slidesPerView={1}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,

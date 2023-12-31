@@ -6,8 +6,8 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Login Page - sikka2x",
-  description: "This is Login page for sikka2x A Mock Interview Portal",
+  title: "Login Page - Sikka2x",
+  description: "This is Login page for Sikka2x A Mock Interview Portal",
   // other metadata
 };
 

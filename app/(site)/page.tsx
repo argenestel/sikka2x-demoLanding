@@ -18,9 +18,9 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "sikka2x - Expert Mock Interviews and Peer Learning Platform",
-  description: "Advance your career with professional mock interviews and peer feedback on sikka2x. Join today!",
-  keywords: ["job interviews", "mock interviews", "career development", "peer learning", "professional feedback"]  // Add more metadata properties as needed
+  title: "Sikka2x - Win 2x every 10 seconds",
+  description: "Play Cricket Quiz every 10 second and win 2x. Truly Zero Commission Game. Play Now!",
+  keywords: ["cricket quiz", "win cash", "skill based game", "sikka", "earn money games"]  // Add more metadata properties as needed
 };
 
 
@@ -29,9 +29,11 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      {/* <Brands /> */}
-      <Feature />
+      <Brands />
+
       <Testimonial />
+      <Feature />
+
       {/* <About /> */}
       {/* <FeaturesTab /> */}
       {/* <FunFact />
