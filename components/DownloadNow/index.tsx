@@ -78,11 +78,11 @@ function DownloadNow() {
             bg-gradient-to-t from-sikkaMaroonGrad  via-sikkaMaroon to-transparent ...
             "
         >
-          <div className='text-white text-lg mx-auto text-center font-bold blinking-text' style={{ userSelect: "none" }}>
+          <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
 Zero Commision app</div>
 <div
   onClick={showModelDownload}
-  className={`zooming-element shining-button flex items-center justify-center rounded-full m-3 p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
+  className={`zooming-element shining-button flex items-center justify-center rounded-full m-2 mr-4 ml-4   p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
   
   ${
     isLoading ? "" : ""
@@ -103,7 +103,7 @@ Zero Commision app</div>
 
             </div>
             
-            <div style={{ userSelect: "none" }}>100% Secure</div>
+            <div style={{ userSelect: "none" }}>100% Skill Based</div>
           </div>
 
           {/* Easy Withdrawals */}
@@ -115,17 +115,15 @@ Zero Commision app</div>
             </div>
             <div style={{ userSelect: "none" }}>Easy Withdrawals</div>
           </div>
-
-          {/* Zero Commission */}
+{/* 
           <div className="flex flex-row items-center text-white text-sm">
-            {/* Add your zero commission icon here */}
             <div className="bg-red-500 rounded-full p-1 mb-1">
-              {/* Add your zero commission icon */}
+
               <PiNumberCircleZeroFill color='#00FF00' size='1.5rem'/>
 
             </div>
             <div style={{ userSelect: "none" }}>Zero Commission</div>
-          </div>
+          </div> */}
         </div>
         </div>
     

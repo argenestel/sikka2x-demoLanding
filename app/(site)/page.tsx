@@ -16,6 +16,8 @@ import Testimonial from "@/components/Testimonial";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import Video from "@/components/Video";
+import FeatureSikka from "@/components/FeatureSikka";
 
 export const metadata: Metadata = {
   title: "Sikka2x - Win 2x every 10 seconds",
@@ -32,16 +34,18 @@ export default function Home() {
       <Brands />
 
       <Testimonial />
-      <Feature />
+      <Video />
+      <FeatureSikka />
+      {/* <Feature /> */}
 
       {/* <About /> */}
       {/* <FeaturesTab /> */}
       {/* <FunFact />
       <Integration /> */}
-      <CTA />
+      {/* <CTA /> */}
       <FAQ />
       {/* <Pricing /> */}
-      <Contact />
+      {/* <Contact /> */}
 
       {/* <Blog /> */}
       <Footer />

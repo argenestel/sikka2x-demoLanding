@@ -4,6 +4,7 @@ import faqData from "./faqData";
 import FAQItem from "./FAQItem";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SectionHeader from "../Common/SectionHeader";
 
 const FAQ = () => {
   const [activeFaq, setActiveFaq] = useState(1);
@@ -15,7 +16,21 @@ const FAQ = () => {
   return (
     <>
       {/* <!-- ===== FAQ Start ===== --> */}
-      <section className="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
+      <section className="pb-20 lg:pb-25 pt-6 xl:pb-30 overflow-hidden">
+      <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0 ">
+          {/* <!-- Section Title Start --> */}
+          <div className="animate_top text-center mx-auto">
+            <SectionHeader
+              headerInfo={{
+                title: `FAQ`,
+                subtitle: ``,
+                description: ``,
+              }}
+            />
+          </div>
+
+          {/* <!-- Section Title End --> */}
+        </div>
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 relative">
           <div className="absolute -bottom-16 -z-1 w-full h-full">
             <Image

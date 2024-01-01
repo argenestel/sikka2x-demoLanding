@@ -54,18 +54,6 @@ export const testimonials = [
     rating: 5,
   },
   {
-    user: "Prince Raj",
-    date: "22 August 2023",
-    content: "It offers a user-friendly interface, a wide range of betting options, and reliable payment methods. The app provides real-time updates on matches, odds, and scores, allowing users to make informed decisions. The betting process is smooth and hassle-free, making it enjoyable to use. Overall, this betting application is highly recommended for both novice and experienced bettors.",
-    rating: 5,
-  },
-  {
-    user: "Deepak Chahal",
-    date: "2 November 2023",
-    content: "Had smooth playing experience.",
-    rating: 5,
-  },
-  {
     user: "Jitendra Patel",
     date: "10 November 2023",
     content: "Best way to double the money for the person with cricket knowledge",
