@@ -53,7 +53,7 @@ const Header = () => {
 <div className="flex md:hidden xl:hidden">
 <div className="relative mr-8 mt-2.5">
           <div
-        className="flex bg-gradient-to-r from-sikkaGold2 to-sikkaGold text-sikkaMaroon font-bold rounded-xl py-1 px-4 absolute top-0 right-0 -mt-4 -mr-4"
+        className="flex border border-strokedark bg-gradient-to-r from-sikkaGold2 to-sikkaGold text-sikkaMaroon font-bold rounded-xl py-1 px-4 absolute top-0 right-0 -mt-4 -mr-4"
           >
             <FaStar className="m-1"/> 
             4.9/5
@@ -160,9 +160,9 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-6 mt-7 lg:mt-0">
-            <ThemeToggler />
+            {/* <ThemeToggler /> */}
 
-            <Link
+            {/* <Link
               href="/auth/signin"
               className="text-waterloo text-regular font-medium hover:text-primary"
             >
@@ -174,7 +174,7 @@ const Header = () => {
               className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
             >
               Sign Up
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

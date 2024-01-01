@@ -33,21 +33,21 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/Logo.png"
+                    src="/sikkalogo.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/Logo.png"
+                    src="/sikkalogo.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
 
                 <p className="mt-5 mb-10">
-                  Get Most Out of Your Interviews.
+                  5 ka 10 in 10 Seconds
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
@@ -57,7 +57,7 @@ const Footer = () => {
                   href="#"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
-                  hello@protonull.com
+                  vikram@sikka2x.com
                 </a>
               </motion.div>
 
@@ -111,10 +111,18 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/terms"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Pricing
+                        Terms and Conditions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/privacy"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Privacy policy
                       </a>
                     </li>
                   </ul>
@@ -148,7 +156,7 @@ const Footer = () => {
                         href="#"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Company
+                        About
                       </a>
                     </li>
                     <li>
@@ -172,7 +180,7 @@ const Footer = () => {
                         href="#"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Contact Us
+                        Refund Policy
                       </a>
                     </li>
                   </ul>
@@ -267,7 +275,7 @@ const Footer = () => {
                     English
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:text-primary">
                     Privacy Policy
                   </a>
@@ -276,7 +284,7 @@ const Footer = () => {
                   <a href="#" className="hover:text-primary">
                     Support
                   </a>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
 
@@ -298,7 +306,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; 2025 Solid. All rights reserved</p>
+              <p>&copy; Sikka2x 2024. All rights reserved with Help of Solid </p>
             </motion.div>
 
             <motion.div

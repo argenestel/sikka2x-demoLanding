@@ -10,7 +10,7 @@
   @apply w-2.5 h-2.5 bg-stroke opacity-100;
 }
 .testimonial-01 .swiper-pagination-bullet-active {
-  @apply bg-primary w-5 rounded-full;
+  @apply bg-sikkaGold w-5 rounded-full;
 }
 
 .testimonial-01 .swiper-pagination {
