@@ -24,24 +24,27 @@ const SingleFeature = ({ brand }: { brand: Feature }) => {
       transition={{ duration: 1, delay: id }}
       viewport={{ once: true }}
       href={href}
-      className="animate_top relative mx-h-full h-[60px] mx-w-full w-[60px] flex flex-col items-center"
-      style={{ marginBottom: "50px" }} // Adjust the margin-bottom as needed
+      className="animate_top relative mx-h-full flex flex-col items-center"
     >
-      <div className="m-4">
+      <div className="  flex items-center justify-center">
         <Image
           className="opacity-100 transition-all duration-300 hover:opacity-90 dark:hidden"
           src={image}
           alt={name}
-          fill
+          width={60}
+          height={60}
         />
         <Image
-          className="hidden opacity-100 transition-all duration-300 hover:opacity-100 dark:block"
+          className="hidden opacity-100 transition-all  duration-300 hover:opacity-100 dark:block"
           src={imageLight}
           alt={name}
-          fill
+          width={60}
+          height={60}
         />
       </div>
-      <div className="m-2 text-xs  pt-4 text-white text-center">{desc}</div>
+      <div className="text-xs pt-2 text-white text-center w-full">
+        {desc}
+      </div>
     </motion.a>
   );
 };

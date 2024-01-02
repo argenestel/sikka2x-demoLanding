@@ -21,7 +21,7 @@ const FeatureSikka = () => {
         <div className="flex mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <Swiper
               spaceBetween={10}
-              slidesPerView={6}
+              slidesPerView={3}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -35,7 +35,7 @@ const FeatureSikka = () => {
                 },
                 // when window width is >= 768px
                 768: {
-                  slidesPerView: 6,
+                  slidesPerView: 3,
                 },
               }}
             >

@@ -11,38 +11,38 @@ export type Feature = {
 
 const featureData: Feature[] = [
   {
-    id: 0.2,
+    id: 0.25,
     name: "Client",
     href: "#",
-    image: "/images/features/secure.png",
-    imageLight: "/images/features/secure.png",
-    desc: "100% Secure Transactions"
+    image: "/images/features/Secure1.png",
+    imageLight: "/images/features/Secure1.png",
+    desc: "100% Safe and Secure Transactions"
   },
   {
     id: 0.3,
     name: "Client",
     href: "#",
-    image: "/images/features/customer_support.png",
-    imageLight: "/images/features/customer_support.png",
-    desc: "24/7 Support"
+    image: "/images/features/FairMatches.png",
+    imageLight: "/images/features/FairMatches.png",
+    desc: "Fair Matches"
 
   },
   {
     id: 0.4,
     name: "Client",
     href: "#",
-    image: "/images/features/swift_withdrawals.png",
-    imageLight: "/images/features/swift_withdrawals.png",
-    desc: "Fast Withdrawls"
+    image: "/images/features/InstantWithdrawals.png",
+    imageLight: "/images/features/InstantWithdrawals.png",
+    desc: "Instant Withdrawls"
 
   },
   {
     id: 0.5,
     name: "Client",
     href: "#",
-    image: "/images/features/secure.png",
-    imageLight: "/images/features/secure.png",
-    desc: "100% Secure Transactions"
+    image: "/images/features/Deposit.png",
+    imageLight: "/images/features/Deposit.png",
+    desc: "No GST on Deposit"
   }
   
 ];
