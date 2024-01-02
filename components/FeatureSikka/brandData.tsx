@@ -1,69 +1,67 @@
-import { Brand } from "@/types/brand";
+export type Feature = {
+  id: number;
+  name: string;
+  href: string;
+  image: string;
+  imageLight: string;
+  desc?: string; // Optional description
+};
 
-const featureData: Brand[] = [
+
+
+const featureData: Feature[] = [
   {
     id: 0.25,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-01.svg",
-    imageLight: "/images/brand/500Users.svg",
+    image: "/images/features/secure.png",
+    imageLight: "/images/features/secure.png",
+    desc: "100% Secure Transactions"
   },
   {
     id: 0.3,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-02.svg",
-    imageLight: "/images/brand/rpe.svg",
+    image: "/images/features/customer_support.png",
+    imageLight: "/images/features/customer_support.png",
+    desc: "24/7 Support"
+
   },
   {
     id: 0.4,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-03.svg",
-    imageLight: "/images/brand/ppe.svg",
+    image: "/images/features/swift_withdrawals.png",
+    imageLight: "/images/features/swift_withdrawals.png",
+    desc: "Fast Withdrawls"
+
   },
   {
     id: 0.5,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-01.svg",
-    imageLight: "/images/brand/500Users.svg",
+    image: "/images/features/secure.png",
+    imageLight: "/images/features/secure.png",
+    desc: "100% Secure Transactions"
   },
   {
     id: 0.6,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-02.svg",
-    imageLight: "/images/brand/rpe.svg",
+    image: "/images/features/customer_support.png",
+    imageLight: "/images/features/customer_support.png",
+    desc: "100% Secure Transactions"
+
   },
   {
     id: 0.7,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-03.svg",
-    imageLight: "/images/brand/ppe.svg",
+    image: "/images/features/swift_withdrawals.png",
+    imageLight: "/images/features/swift_withdrawals.png",
+    desc: "100% Secure Transactions"
+
   },
-  // {
-  //   id: 0.5,
-  //   name: "Client",
-  //   href: "#",
-  //   image: "/images/brand/brand-light-04.svg",
-  //   imageLight: "/images/brand/brand-dark-04.svg",
-  // },
-  // {
-  //   id: 0.6,
-  //   name: "Client",
-  //   href: "#",
-  //   image: "/images/brand/brand-light-05.svg",
-  //   imageLight: "/images/brand/brand-dark-05.svg",
-  // },
-  // {
-  //   id: 0.7,
-  //   name: "Client",
-  //   href: "#",
-  //   image: "/images/brand/brand-light-06.svg",
-  //   imageLight: "/images/brand/brand-dark-06.svg",
-  // },
   
 ];
 

@@ -78,8 +78,8 @@ function DownloadNow() {
             bg-gradient-to-t from-sikkaMaroonGrad  via-sikkaMaroon to-transparent ...
             "
         >
-          <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
-Zero Commision app</div>
+          {/* <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
+Zero Commision app</div> */}
 <div
   onClick={showModelDownload}
   className={`zooming-element shining-button flex items-center justify-center rounded-full m-2 mr-4 ml-4   p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
@@ -94,6 +94,8 @@ Zero Commision app</div>
   
       <span className="ml-2">{isLoading ? "Downloading..." : "Download Now"}</span>
       </div>
+      <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
+Zero Commision app</div>
             <div className="flex justify-around">
           {/* 100% Secure */}
           <div className="flex flex-row items-center text-white text-sm">
@@ -115,8 +117,8 @@ Zero Commision app</div>
             </div>
             <div style={{ userSelect: "none" }}>Easy Withdrawals</div>
           </div>
-{/* 
-          <div className="flex flex-row items-center text-white text-sm">
+
+          {/* <div className="flex flex-row items-center text-white text-sm">
             <div className="bg-red-500 rounded-full p-1 mb-1">
 
               <PiNumberCircleZeroFill color='#00FF00' size='1.5rem'/>
