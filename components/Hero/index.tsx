@@ -44,9 +44,8 @@ const Hero = () => {
     setIsModalOpen(false);
   };
   const placeHolder = [
-    "/images/hero/sikkas1t4.png",
-    "/images/hero/testQuiz2.png",
-    "/images/hero/testQuiz2.png"
+    "/images/hero/sikkas1t6.png",
+    "/images/hero/sikkas2t3.png",
   ]
        // Define your aspect ratios here
 const aspectRatios = [
