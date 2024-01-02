@@ -147,18 +147,18 @@ const aspectRatios = [
                           src={image}
                           alt="testimonial"
                           fill
-                          className="absolute top-0 left-0 object-cover -z-10 "
+                          className="absolute top-0 left-0 object-cover -z-10 zooming-element "
                           />
 
       {/* Fire Image */}
-      <div className="absolute top-0 right-30 z-20 transform translate-y-1/2 translate-x-1/2 -rotate-45">
+      {/* <div className="absolute top-0 right-80 z-20 transform translate-y-1/2  -rotate-45">
         <Image
           src="/Fire.gif"
           width={120}
           height={120}
           alt="fire"
         />
-      </div>
+      </div> */}
                       </div>
                   </div>
                 </SwiperSlide>
