@@ -147,7 +147,7 @@ const aspectRatios = [
                           src={image}
                           alt="testimonial"
                           fill
-                          className="absolute top-0 left-0 object-cover -z-10 zooming-element "
+                          className="absolute top-0 left-0 object-cover -z-10 "
                           />
 
       {/* Fire Image */}
