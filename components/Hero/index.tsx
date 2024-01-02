@@ -45,7 +45,7 @@ const Hero = () => {
   };
   const placeHolder = [
     "/images/hero/sikkas1t6.png",
-    "/images/hero/sikkas2t3.png",
+    "/images/hero/sikkas2t4.png",
   ]
        // Define your aspect ratios here
 const aspectRatios = [

@@ -82,7 +82,7 @@ function DownloadNow() {
 Zero Commision app</div> */}
 <div
   onClick={showModelDownload}
-  className={`zooming-element shining-button flex items-center justify-center rounded-full m-2 mr-4 ml-4   p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
+  className={` shining-button flex items-center justify-center rounded-full m-2 mr-4 ml-4   p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
   
   ${
     isLoading ? "" : ""
@@ -115,7 +115,7 @@ Zero Commision app</div>
               {/* Add your checkmark icon */}
               <CheckmarkIcon/>
             </div>
-            <div style={{ userSelect: "none" }}>Easy Withdrawals</div>
+            <div style={{ userSelect: "none" }}>Instant UPI Withdrawals</div>
           </div>
 
           {/* <div className="flex flex-row items-center text-white text-sm">
