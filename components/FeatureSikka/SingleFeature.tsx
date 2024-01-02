@@ -23,7 +23,6 @@ const SingleFeature = ({ brand }: { brand: Feature }) => {
       whileInView="visible"
       transition={{ duration: 1, delay: id }}
       viewport={{ once: true }}
-      href={href}
       className="animate_top relative mx-h-full flex flex-col items-center"
     >
       <div className="  flex items-center justify-center">

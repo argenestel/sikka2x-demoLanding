@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <>
       {/* <!-- ===== FAQ Start ===== --> */}
-      <section className="pb-20 lg:pb-25 pt-6 xl:pb-30 overflow-hidden">
+      <section className="pb-20 lg:pb-25 pt-6 xl:pb-30 overflow-hidden bg-gradient-to-t from-transparent via-sikkaMaroon to-transparent">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0 ">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top text-center mx-auto">
@@ -75,7 +75,7 @@ const FAQ = () => {
                 </span>
               </h2>
 
-              <a
+              {/* <a
                 href="#"
                 className="flex items-center gap-2.5 text-black dark:text-white mt-7.5 hover:text-primary dark:hover:text-primary"
               >
@@ -91,7 +91,7 @@ const FAQ = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </a> */}
             </motion.div>
 
             <motion.div
