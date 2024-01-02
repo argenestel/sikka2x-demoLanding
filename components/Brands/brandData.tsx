@@ -6,7 +6,7 @@ const brandData: Brand[] = [
     name: "Client",
     href: "#",
     image: "/images/brand/Gpay.png",
-    imageLight: "/images/brand/Gpay.png",
+    imageLight: "/images/brand/gplay.svg",
   },
   {
     id: 0.3,
@@ -41,7 +41,7 @@ const brandData: Brand[] = [
     name: "Client",
     href: "#",
     image: "/images/brand/brand-light-06.svg",
-    imageLight: "/images/brand/gplay.png",
+    imageLight: "/images/brand/Gpay.png",
   },
   
 ];

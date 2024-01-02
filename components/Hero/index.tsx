@@ -45,7 +45,7 @@ const Hero = () => {
   };
   const placeHolder = [
     "/images/hero/sikkas1t6.png",
-    "/images/hero/sikkas2t4.png",
+    "/images/hero/sikkas2t5.png",
   ]
        // Define your aspect ratios here
 const aspectRatios = [
@@ -99,7 +99,7 @@ const aspectRatios = [
 
   return (
     <>
-      <section className="pt-0 md:pt-36 xl:pt-36 pb-20 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
+      <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
 
         { !isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">

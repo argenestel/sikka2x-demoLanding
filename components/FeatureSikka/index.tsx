@@ -13,8 +13,9 @@ const FeatureSikka = () => {
     <>
       {/* <!-- ===== Clients Start ===== --> */}
       <section className="bg-alabaster dark:bg-black border border-x-0 border-y-stroke dark:border-y-strokedark py-11">
+
         <div className="mx-auto max-w-c-1390 px-0 md:px-8 2xl:px-0 text-center pb-4 font-bold text-white">
-          Features
+          Why Sikka2x?
         </div>
 
         <div className="flex mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">

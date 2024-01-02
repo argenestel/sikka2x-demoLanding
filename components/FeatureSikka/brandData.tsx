@@ -11,7 +11,7 @@ export type Feature = {
 
 const featureData: Feature[] = [
   {
-    id: 0.25,
+    id: 0.2,
     name: "Client",
     href: "#",
     image: "/images/features/secure.png",
@@ -43,25 +43,7 @@ const featureData: Feature[] = [
     image: "/images/features/secure.png",
     imageLight: "/images/features/secure.png",
     desc: "100% Secure Transactions"
-  },
-  {
-    id: 0.6,
-    name: "Client",
-    href: "#",
-    image: "/images/features/customer_support.png",
-    imageLight: "/images/features/customer_support.png",
-    desc: "100% Secure Transactions"
-
-  },
-  {
-    id: 0.7,
-    name: "Client",
-    href: "#",
-    image: "/images/features/swift_withdrawals.png",
-    imageLight: "/images/features/swift_withdrawals.png",
-    desc: "100% Secure Transactions"
-
-  },
+  }
   
 ];
 

@@ -17,7 +17,7 @@ import StarRating from "./Starrating";
 const Testimonial = () => {
   return (
 
-      <section className="py-8 dark:bg-gradient-to-b from-sikkaMaroonGrad via-sikkaMaroon to-transparent">
+      <section className="py-8 dark:bg-gradient-to-b from-transparent via-sikkaMaroon to-transparent">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0 ">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top text-center mx-auto">
@@ -49,11 +49,11 @@ const Testimonial = () => {
           whileInView="visible"
           transition={{ duration: 1, delay: 0.1 }}
           viewport={{ once: true }}
-          className="animate_top mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-15 xl:mt-20"
+          className="animate_top mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-5 xl:mt-10"
         >
           {/* <!-- Slider main container --> */}
 
-          <div className="swiper testimonial-01 pb-22.5 mb-20">
+          <div className="swiper testimonial-01 pb-10 mb-10">
           <div className="flex md:flex-row flex-col justify-center items-center">
             {/* Existing rating image */}
             <div className="md:w-1/2">
