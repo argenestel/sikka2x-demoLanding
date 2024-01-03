@@ -52,14 +52,12 @@ const Video: React.FC<VideoProps> = () => {
               fill
             />
           </div>
-
           <motion.div
             variants={{
               hidden: {
                 opacity: 0,
                 y: -20,
               },
-
               visible: {
                 opacity: 1,
                 y: 0,
@@ -72,21 +70,14 @@ const Video: React.FC<VideoProps> = () => {
             className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15 relative"
           >
             <div className="relative">
-              {/* Placeholder image for phone frame */}
-              {/* <Image
-                src="/path/to/phoneframe.png"
-                alt="Phone Frame"
-                className="md:w-16 sm:h-fit w-full h-full object-cover"
-              /> */}
-              {/* Video element */}
               <video
                 ref={videoRef}
                 className="md:w-16 sm:h-fit w-full h-full object-cover"
                 src="/video/gameplay.webm"
                 autoPlay
                 loop
+                playsInline  // <-- Add this attribute
               ></video>
-              {/* Play/Pause button */}
               <button
                 onClick={handlePlayPause}
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white rounded-full px-4 py-2 z-10"

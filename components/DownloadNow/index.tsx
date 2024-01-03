@@ -79,7 +79,7 @@ function DownloadNow() {
             "
         >
           {/* <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
-Zero Commision app</div> */}
+Zero Commission app</div> */}
 <div
   onClick={showModelDownload}
   className={` shining-button flex items-center justify-center rounded-full m-2 mr-4 ml-4   p-2 text-lg font-bold text-white bg-primary hover:bg-btndark border border-primary hover:border-primaryho
@@ -95,7 +95,7 @@ Zero Commision app</div> */}
       <span className="ml-2">{isLoading ? "Downloading..." : "Download Now"}</span>
       </div>
       <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
-Zero Commision app</div>
+Zero Commission app</div>
             <div className="flex justify-around">
           {/* 100% Secure */}
           <div className="flex flex-row items-center text-white text-sm">
