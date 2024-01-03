@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import SectionHeader from "../Common/SectionHeader";
 
 
 const FeatureSikka = () => {
@@ -14,9 +15,13 @@ const FeatureSikka = () => {
       {/* <!-- ===== Clients Start ===== --> */}
       <section className="bg-alabaster dark:bg-black border border-x-0 border-y-stroke dark:border-y-strokedark py-11">
 
-        <div className="mx-auto max-w-c-1390 px-0 md:px-8 2xl:px-0 text-center pb-4 font-bold text-white">
-          Why Sikka2x?
-        </div>
+      <SectionHeader
+              headerInfo={{
+                title: `Why Sikka2x`,
+                subtitle: ``,
+                description: ``,
+              }}
+            />
 
         <div className="flex mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <Swiper

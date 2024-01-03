@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <>
       {/* <!-- ===== FAQ Start ===== --> */}
-      <section className="pb-20 lg:pb-25 pt-6 xl:pb-30 overflow-hidden bg-gradient-to-t from-transparent via-sikkaMaroon to-transparent">
+      <section className="pb-20 lg:pb-25 mt-10 xl:pb-30 overflow-hidden bg-gradient-to-t from-transparent via-sikkaMaroon to-transparent">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0 ">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top text-center mx-auto">
@@ -65,7 +65,7 @@ const FAQ = () => {
               viewport={{ once: true }}
               className="animate_left md:w-2/5 lg:w-1/2"
             >
-              <h4 className="text-black dark:text-white font-medium uppercase">
+              {/* <h4 className="text-black dark:text-white font-medium uppercase">
                 OUR FAQS
               </h4>
               <h2 className="relative font-bold text-black dark:text-white text-3xl xl:text-hero mb-6">
@@ -73,7 +73,7 @@ const FAQ = () => {
                 <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">
                   Questions
                 </span>
-              </h2>
+              </h2> */}
 
               {/* <a
                 href="#"

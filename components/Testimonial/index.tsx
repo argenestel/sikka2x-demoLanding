@@ -53,7 +53,7 @@ const Testimonial = () => {
         >
           {/* <!-- Slider main container --> */}
 
-          <div className="swiper testimonial-01 pb-10 mb-10">
+          <div className="swiper testimonial-01 pb-4 mb-8">
           <div className="flex md:flex-row flex-col justify-center items-center">
             {/* Existing rating image */}
             <div className="md:w-1/2">
