@@ -129,7 +129,7 @@ const Video = () => {
                   Email Address
                 </h4>
                 <p>
-                  <a href="mailto:vikram@sikka2x.com">vikram@sikka2x.com</a>
+                  <a href="mailto:support@sikka2x.com">support@sikka2x.com</a>
                 </p>
               </div> */}
               {/* <div>

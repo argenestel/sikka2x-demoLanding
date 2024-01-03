@@ -57,7 +57,7 @@ const Footer = () => {
                   href="#"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
-                  vikram@sikka2x.com
+                  support@sikka2x.com
                 </a>
               </motion.div>
 

@@ -16,7 +16,7 @@ const featureData: Feature[] = [
     href: "#",
     image: "/images/features/Secure1.png",
     imageLight: "/images/features/Secure1.png",
-    desc: "100% Safe and Secure Transactions"
+    desc: "100% Safe and Secure"
   },
   {
     id: 0.3,
