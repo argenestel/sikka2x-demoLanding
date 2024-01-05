@@ -98,7 +98,7 @@ const Footer = () => {
                         href="#"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Product
+                        Support
                       </a>
                     </li>
                     <li>
@@ -128,7 +128,7 @@ const Footer = () => {
                   </ul>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                   variants={{
                     hidden: {
                       opacity: 0,
@@ -184,7 +184,7 @@ const Footer = () => {
                       </a>
                     </li>
                   </ul>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                   variants={{
@@ -204,7 +204,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
+                  {/* <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
@@ -242,7 +242,7 @@ const Footer = () => {
                         </svg>
                       </button>
                     </div>
-                  </form>
+                  </form> */}
                 </motion.div>
               </div>
             </div>
