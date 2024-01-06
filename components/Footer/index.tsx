@@ -47,7 +47,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mt-5 mb-10">
-                  5 ka 10 in 10 Seconds
+                Zero Commission App
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
@@ -55,7 +55,7 @@ const Footer = () => {
                 </p>
                 <a
                   href="#"
-                  className="text-black dark:text-white font-medium text-itemtitle"
+                  className="text-black dark:text-white font-small text-itemtitle"
                 >
                   support@sikka2x.com
                 </a>
@@ -93,7 +93,7 @@ const Footer = () => {
                         Home
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="inline-block hover:text-primary mb-3"
@@ -108,7 +108,7 @@ const Footer = () => {
                       >
                         Careers
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="/terms"
@@ -331,28 +331,25 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#">
-                    <svg
-                      className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_48_1499)">
-                        <path
-                          d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z"
-                          fill=""
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_48_1499">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4.53 4.53 0 1 1 11.37 16 4.53 4.53 0 0 1 16 11.37z" />
+    <path d="M17.5 6.5H17.51" />
+  </svg>
+</a>
+
                 </li>
                 <li>
                   <a href="#">
@@ -379,7 +376,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/sikka2x/">
                     <svg
                       className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
                       width="24"
@@ -402,7 +399,7 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <svg
                       className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
@@ -421,7 +418,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>

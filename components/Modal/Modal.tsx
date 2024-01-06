@@ -7,7 +7,7 @@ const Modal = ({ onClose }) => {
       <div className="modal-content bg-gradient-to-r from-sikkaMaroon to-sikkaMaroonGrad rounded-lg  p-2 w-full h-full">
         <video
           className="w-full h-full object-cover"
-          src="/video/safe.mp4"
+          src="/video/finished.webm"
           autoPlay
           loop
         
