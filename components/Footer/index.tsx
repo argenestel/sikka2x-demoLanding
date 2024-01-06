@@ -307,7 +307,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>Copyright &copy; Gametech Studio. All rights reserved 2024</p>
-              <p>Landing Made with Solid</p>
+              {/* <p>Landing Made with Solid</p> */}
 
             </motion.div>
 
