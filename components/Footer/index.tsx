@@ -306,7 +306,9 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; Sikka2x 2024. All rights reserved with Help of Solid </p>
+              <p>Copyright &copy; Gametech Studio. All rights reserved 2024</p>
+              <p>Landing Made with Solid</p>
+
             </motion.div>
 
             <motion.div

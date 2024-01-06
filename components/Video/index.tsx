@@ -67,12 +67,12 @@ const Video: React.FC<VideoProps> = () => {
             whileInView="visible"
             transition={{ duration: 2, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15 relative"
+            className="animate_top w-full md:w-2/5 md:p-7.5 xl:pt-15 relative"
           >
             <div className="relative">
               <video
                 ref={videoRef}
-                className="md:w-16 sm:h-fit w-full h-full object-cover"
+                className="sm:h-fit w-full h-full object-cover"
                 src="/video/gameplay.webm"
                 autoPlay
                 loop
