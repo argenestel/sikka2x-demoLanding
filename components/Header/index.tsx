@@ -104,7 +104,7 @@ const Header = () => {
         </div>
 
         {/* Nav Menu Start   */}
-        <div
+        {/* <div
           className={`w-full lg:w-full h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
             navigationOpen &&
             "!visible bg-white dark:bg-blacksection shadow-solid-5 h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5"
@@ -159,7 +159,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-6 mt-7 lg:mt-0">
+          <div className="flex items-center gap-6 mt-7 lg:mt-0"> */}
             {/* <ThemeToggler /> */}
 
             {/* <Link
@@ -175,8 +175,8 @@ const Header = () => {
             >
               Sign Up
             </Link> */}
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
       </div>
     </header>
   );
