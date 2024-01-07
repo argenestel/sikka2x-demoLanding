@@ -51,8 +51,8 @@ export default function Home() {
       <Footer />
      
     <div className="container">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
-      <Script id="google-analytics">
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
+      <Script async id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
