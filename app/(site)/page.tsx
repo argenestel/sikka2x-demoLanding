@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 import Video from "@/components/Video";
 import FeatureSikka from "@/components/FeatureSikka";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Sikka2x - Win 2x every 10 seconds",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <SpeedInsights />
       <Header />
       <Hero />
       <Brands />
