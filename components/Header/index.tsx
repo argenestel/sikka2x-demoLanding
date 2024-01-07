@@ -61,7 +61,7 @@ const Header = () => {
         </div>
 
           {/* <!-- Hamburger Toggle BTN --> */}
-          <button
+          {/* <button
             aria-label="hamburger Toggler"
             className="lg:hidden block"
             onClick={() => setNavigationOpen(!navigationOpen)}
@@ -98,7 +98,7 @@ const Header = () => {
                 ></span>
               </span>
             </span>
-          </button>
+          </button> */}
           </div>
           {/* <!-- Hamburger Toggle BTN --> */}
         </div>
