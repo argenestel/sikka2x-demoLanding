@@ -38,7 +38,8 @@ const Header = () => {
               alt="logo"
               width={119.03}
               height={30}
-              className="w-full"
+   
+              
             />
             {/* <Image
               src="/sikkalogo.png"
