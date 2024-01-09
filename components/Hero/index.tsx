@@ -139,17 +139,15 @@ const aspectRatios = [
                     <div className="bg-transparent shadow-solid-9 dark:shadow-none"
                     >
                     <div style={{ position: 'relative', paddingTop: `${100/aspectRatio[1] * aspectRatio[0]}%`}} className=" w-full">
-                        {/* <div className="-z-10">.</div> */}
+                        <div className="-z-10">.</div>
                         {/* for some reason this is not rendering */}
-                        <div>
-                        {/* <Image
+                        
+                        <Image
                           src={image}
-                          rel="preload"
                           alt="testimonial"
                           fill
                           className="absolute top-0 left-0 object-cover -z-10 "
-                          /> */}
-                          </div>
+                          />
 
       {/* Fire Image */}
       {/* <div className="absolute top-0 right-80 z-20 transform translate-y-1/2  -rotate-45">
