@@ -4,8 +4,8 @@ import React from 'react'
 function Analytics() {
   return (
     <>
-    <Script async strategy="lazyOnload"  src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
-    <Script async strategy="lazyOnload" id="google-analytics">
+    <Script async defer strategy="lazyOnload"  src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
+    <Script async defer strategy="lazyOnload" id="google-analytics">
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
