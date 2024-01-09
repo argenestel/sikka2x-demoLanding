@@ -34,19 +34,19 @@ const Header = () => {
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <a href="/">
             <Image
-              src="/sikkalogo.png"
+              src="/images/hero/logosikka.svg"
               alt="logo"
               width={119.03}
               height={30}
-              className="w-full hidden dark:block"
+              className="w-full"
             />
-            <Image
+            {/* <Image
               src="/sikkalogo.png"
               alt="logo"
               width={119.03}
               height={30}
               className="w-full dark:hidden"
-            />
+            /> */}
           </a>
 <div className="flex md:hidden xl:hidden">
 <div className="relative mr-8 mt-2.5">
