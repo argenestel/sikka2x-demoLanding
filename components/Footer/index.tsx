@@ -339,9 +339,9 @@ const Footer = () => {
     height="24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="fill-[#D1D8E0] hover:fill-primary transition-all duration-300"
   >
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
