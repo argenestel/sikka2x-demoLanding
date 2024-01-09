@@ -146,6 +146,7 @@ const aspectRatios = [
                           src={image}
                           alt="testimonial"
                           fill
+                          loading="lazy"
                           className="absolute top-0 left-0 object-cover -z-10 "
                           />
 

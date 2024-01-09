@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 
 type FaqData = {
   activeFaq: number;
@@ -61,7 +60,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
             activeFaq === id ? "block" : "hidden"
           }`}
         >
-          <ReactMarkdown>{ans}</ReactMarkdown>
+         {ans}
         </p>
       </div>
     </>
