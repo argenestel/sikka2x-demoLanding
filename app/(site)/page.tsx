@@ -20,6 +20,7 @@ import Video from "@/components/Video";
 import FeatureSikka from "@/components/FeatureSikka";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head";
+import Analytics from "@/components/Analytics";
 
 export const metadata: Metadata = {
   title: "Sikka2x - Win 2x every 10 seconds",
@@ -52,19 +53,9 @@ export default function Home() {
 
       {/* <Blog /> */}
       <Footer />
-     <Head>
 
-      <Script async strategy="lazyOnload"  src="https://www.googletagmanager.com/gtag/js?id=G-R0RR6G0308" />
-      <Script async strategy="lazyOnload" id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-R0RR6G0308');
-        `}
-      </Script>
-      </Head>
+      <Analytics />
+
     </main>
   );
 }

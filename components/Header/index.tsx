@@ -9,11 +9,9 @@ import menuData from "./menuData";
 import { FaStar } from "react-icons/fa";
 
 const Header = () => {
-  const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
+
   const [stickyMenu, setStickyMenu] = useState(false);
 
-  const pathUrl = usePathname();
 
   // Sticky menu
   const handleStickyMenu = () => {
