@@ -1,25 +1,30 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "../Common/SectionHeader";
 
 // Define types for props if needed
 interface VideoProps {}
-
-const Video: React.FC<VideoProps> = () => {
+const Video = React.memo(
+function Video(){
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handlePlayPause = () => {
+  useEffect(() => {
     const video = videoRef.current;
-
-    if (video) {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
+    if(video) {
+      video.load();
     }
+  }, [videoRef]);
+  const handlePlayPause = () => {
+    // const video = videoRef.current;
+
+    // if (video) {
+    //   if (video.paused) {
+    //     video.play();
+    //   } else {
+    //     video.pause();
+    //   }
+    // }
   };
 
   return (
@@ -90,6 +95,6 @@ const Video: React.FC<VideoProps> = () => {
       </section>
     </>
   );
-};
+});
 
 export default Video;
