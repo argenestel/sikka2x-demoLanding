@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { Brand } from "@/types/brand";
 import { motion } from "framer-motion";
+import dynamic from 'next/dynamic'
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { image, href, name, imageLight, id } = brand;
@@ -32,12 +33,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
           src={image}
           alt={name}
           fill
-        />
-        <Image
-          className="hidden opacity-100 transition-all duration-300 hover:opacity-100 dark:block"
-          src={imageLight}
-          alt={name}
-          fill
+          
         />
 
       </motion.a>
