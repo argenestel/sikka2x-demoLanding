@@ -81,7 +81,7 @@ const Testimonial = () => {
                         <StarRating rating={testimonial.rating} />
                       </div>
                     </div>
-                    <p>{testimonial.content}</p>
+                    {testimonial.content}
                   </div>
                 </SwiperSlide>
               ))}
