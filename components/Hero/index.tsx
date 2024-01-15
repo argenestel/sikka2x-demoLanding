@@ -94,12 +94,12 @@ const Hero = () => {
                   <SwiperSlide key={index}>
                     <div className="bg-transparent shadow-solid-9 dark:shadow-none">
                       <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[1] * aspectRatio[0]}%` }} className="w-full">
-                        <div className="-z-10">.</div>
+                        <div>.</div>
                         <Image
                           src={image}
                           alt="testimonial"
                           fill
-                          className="absolute top-0 left-0 object-cover -z-10"
+                          className="absolute top-0 left-0 object-cover"
                         />
                       </div>
                     </div>
