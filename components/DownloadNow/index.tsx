@@ -67,8 +67,8 @@ function DownloadNow() {
 
   return (
     <>
-    { isMobile &&
-    <div className="fixed bottom-4 right-8 z-[99]">
+
+    <div className="fixed bottom-4 right-8 z-[99] xl:hidden md:hidden lg:hidden">
       {isModalOpen && <Modal onClose={closeModal} />}
         <div
          
@@ -87,14 +87,14 @@ Zero Commission app</div> */}
   ${
     isLoading ? "" : ""
   }`}
-
+  
   style={{ userSelect: "none" }}
 >
   {isLoading ? (<IoReloadCircle size={25} color={'#fff'} className='text-center spin' />) : (<IoDownloadSharp size={25} color={'#fff'} className='text-center' />)}
   
       <span className="ml-2">{isLoading ? "Downloading..." : "Download Now"}</span>
       </div>
-      <div className='text-white text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
+      <div className='text-white  text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
 Zero Commission App</div>
             <div className="flex justify-around">
           {/* 100% Secure */}
@@ -130,7 +130,7 @@ Zero Commission App</div>
         </div>
     
     </div>
-}
+
     </>
   );
 }
