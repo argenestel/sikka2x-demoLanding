@@ -14,23 +14,9 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
   return (
     <>
       {/* <!-- Section Title Start --> */}
-      <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -20,
-          },
+      <div
 
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 1, delay: 0.1 }}
-        viewport={{ once: true }}
-        className="animate_top text-center mx-auto"
+        className="text-center mx-auto"
       >
         {/* <div className="bg-zumthor dark:bg-blacksection dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4"> */}
         <div className="bg-zumthor dark:bg-gradient-to-r dark:from-sikkaGold2 dark:via-sikkaGold3 dark:to-sikkaGold dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4">
@@ -43,7 +29,7 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
           {subtitle}
         </h2>
         <p className="mx-auto md:w-4/5 text-white lg:w-3/5 xl:w-[46%]">{description}</p>
-      </motion.div>
+      </div>
       {/* <!-- Section Title End --> */}
     </>
   );
