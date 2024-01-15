@@ -98,10 +98,11 @@ const Hero = () => {
                         <Image
                           src={image}
                           alt="testimonial"
-                          fill
-                          loading="lazy"
                           decoding="async"
-                          className="absolute top-0 left-0 object-cover"
+                          loading="lazy"
+                          fill
+                          className="absolute top-0 left-0 object-cover h-full w-full inset-0"                        
+                          
                         />
                       </div>
                     </div>
