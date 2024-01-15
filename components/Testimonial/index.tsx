@@ -33,23 +33,9 @@ const Testimonial = () => {
           {/* <!-- Section Title End --> */}
         </div>
 
-        <motion.div
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: -20,
-            },
+        <div
 
-            visible: {
-              opacity: 1,
-              y: 0,
-            },
-          }}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 1, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="animate_top mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-5 xl:mt-10"
+          className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-5 xl:mt-10"
         >
           {/* <!-- Slider main container --> */}
 
@@ -121,7 +107,7 @@ const Testimonial = () => {
               ))}
             </Swiper>
           </div>
-        </motion.div>
+        </div>
       </section>
  
   );
