@@ -37,7 +37,7 @@ const Testimonial = () => (
   <section className="py-8 dark:bg-gradient-to-b from-transparent via-sikkaMaroon to-transparent">
     <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
       {/* Section Title */}
-      {/* <div className="animate_top text-center mx-auto">
+      <div className="animate_top text-center mx-auto">
         <SectionHeader
           headerInfo={{
             title: "Reviews",
@@ -45,14 +45,14 @@ const Testimonial = () => (
             description: "What our users say about us",
           }}
         />
-      </div> */}
+      </div>
       {/* Slider Container */}
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-5 xl:mt-10">
         <div className="swiper testimonial-01 pb-4 mb-8">
           <div className="flex md:flex-row flex-col justify-center items-center">
             {/* Star Rating Image */}
             <div className="md:w-1/2">
-              {/* <div className="justify-center pb-4 rounded-sm">
+              <div className="justify-center pb-4 rounded-sm">
                 <Image
                   src="/images/about/starRating.png"
                   alt="starRating"
@@ -61,7 +61,7 @@ const Testimonial = () => (
                   className="rounded-lg w-full md:hidden xl:hidden"
                   loading="lazy"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
           {/* Testimonial Swiper */}
@@ -86,11 +86,11 @@ const Testimonial = () => (
             }}
           >
             {/* Testimonial Slides */}
-            {/* {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <TestimonialSlide testimonial={testimonial} />
               </SwiperSlide>
-            ))} */}
+            ))}
           </Swiper>
         </div>
       </div>
