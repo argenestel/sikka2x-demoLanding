@@ -16,23 +16,17 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
 
   return (
     <>
-      {/* Section Title Start */}
-      <div className="text-center mx-auto">
-        {/* Background container */}
+      {/* <div className="text-center mx-auto">
         <div className="bg-zumthor dark:bg-gradient-to-r dark:from-sikkaGold2 dark:via-sikkaGold3 dark:to-sikkaGold dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4">
-          {/* Title */}
           <h4 className="text-sectiontitle text-black dark:text-sikkaMaroon font-bold">
             {title}
           </h4>
         </div>
-        {/* Subtitle */}
         <h2 className="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto mb-4">
           {subtitle}
         </h2>
-        {/* Description */}
         <p className="mx-auto md:w-4/5 text-white lg:w-3/5 xl:w-[46%]">{description}</p>
-      </div>
-      {/* Section Title End */}
+      </div> */}
     </>
   );
 };
