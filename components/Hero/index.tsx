@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 import { IoLogoAndroid } from "react-icons/io5";
@@ -16,13 +16,13 @@ const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [aspectRatio, setAspectRatio] = useState([16, 9]);
 
-  const OpenModel = () => {
+  const OpenModel = useCallback(() => {
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const CloseModel = () => {
+  const CloseModel = useCallback(() => {
     setIsModalOpen(false);
-  };
+  }, []);
 
   const placeHolder = [
     "/images/hero/1.svg",
@@ -42,7 +42,7 @@ const Hero = () => {
     { height: 21, width: 9 },
   ];
 
-  const updateAspectRatio = debounce(() => {
+  const updateAspectRatio = useCallback(debounce(() => {
     const windowWidth = window.innerWidth;
     const chosenAspectRatio = aspectRatios.find(
       ratio => windowWidth >= ratio.width * 100
@@ -51,7 +51,7 @@ const Hero = () => {
     if (chosenAspectRatio) {
       setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
     }
-  }, 300);
+  }, 300), []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -65,7 +65,7 @@ const Hero = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [updateAspectRatio]);
 
   return (
     <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
@@ -81,22 +81,23 @@ const Hero = () => {
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-               
               >
                 {placeHolder.map((image, index) => (
                   <SwiperSlide key={index}>
                     <div className="bg-transparent shadow-solid-9 dark:shadow-none">
-                      <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[1] * aspectRatio[0]}%` }} className="w-full">
-                        <div>.</div>
-                        <Image
-                          src={image}
-                          alt="testimonial"
-                          decoding="async"
-                          loading="eager"
-                          fill
-                          className="absolute top-0 left-0 object-cover h-full w-full inset-0"                        
-                          
-                        />
+                      <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[1] * aspectRatio[0]}%`, width: '100%' }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+                          <Image
+                            src={image}
+                            alt="testimonial"
+                            decoding="async"
+                            loading="eager"
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg"
+                            placeholder="empty"
+                          />
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -108,7 +109,7 @@ const Hero = () => {
       ) : (
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className="md:w-1/2">
+          <div className="md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5"></h4>
               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 100% Skill Based Cricket Quiz
