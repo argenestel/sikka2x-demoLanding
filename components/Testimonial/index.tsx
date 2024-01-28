@@ -37,7 +37,7 @@ const Testimonial = () => (
   <section className="py-8 dark:bg-gradient-to-b from-transparent via-sikkaMaroon to-transparent">
     <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
       {/* Section Title */}
-      <div className="animate_top text-center mx-auto">
+      {/* <div className="animate_top text-center mx-auto">
         <SectionHeader
           headerInfo={{
             title: "Reviews",
@@ -45,7 +45,7 @@ const Testimonial = () => (
             description: "What our users say about us",
           }}
         />
-      </div>
+      </div> */}
       {/* Slider Container */}
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 mt-5 xl:mt-10">
         <div className="swiper testimonial-01 pb-4 mb-8">
