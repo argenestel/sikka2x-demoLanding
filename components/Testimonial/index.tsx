@@ -52,7 +52,7 @@ const Testimonial = () => (
           <div className="flex md:flex-row flex-col justify-center items-center">
             {/* Star Rating Image */}
             <div className="md:w-1/2">
-              <div className="justify-center pb-4 rounded-sm">
+              {/* <div className="justify-center pb-4 rounded-sm">
                 <Image
                   src="/images/about/starRating.png"
                   alt="starRating"
@@ -61,7 +61,7 @@ const Testimonial = () => (
                   className="rounded-lg w-full md:hidden xl:hidden"
                   loading="lazy"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Testimonial Swiper */}
