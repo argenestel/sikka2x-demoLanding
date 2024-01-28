@@ -25,8 +25,8 @@ const Hero = () => {
   }, []);
 
   const placeHolder = [
-    { src: "/images/hero/1.svg", width: 1920, height: 1080 },
-    { src: "/images/hero/8.svg", width: 1920, height: 1080 },
+    { src: "/images/hero/1.svg", width: 1080 , height: 1700 },
+    { src: "/images/hero/8.svg", width: 1080, height: 1700 },
   ];
 
   const aspectRatios = [
@@ -85,7 +85,7 @@ const Hero = () => {
                 {placeHolder.map((image, index) => (
                   <SwiperSlide key={index}>
                     <div className="bg-transparent shadow-solid-9 dark:shadow-none">
-                      <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[1] * aspectRatio[0]}%`, width: '100%' }}>
+                      <div style={{ position: 'relative', height: '0', paddingTop: '150%', width: '100%' }}>
                         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
                           <Image
                             src={image.src}
