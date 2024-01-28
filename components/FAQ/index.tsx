@@ -33,7 +33,7 @@ const FAQ = () => {
         </div>
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 relative">
           <div className="absolute -bottom-16 -z-1 w-full h-full">
-            <Image
+            {/* <Image
               fill
               src="/images/shape/shape-dotted-light.svg"
               alt="Dotted"
@@ -44,7 +44,7 @@ const FAQ = () => {
               src="/images/shape/shape-dotted-light.svg"
               alt="Dotted"
               className="hidden dark:block"
-            />
+            /> */}
           </div>
           <div className="flex flex-wrap md:flex-nowrap md:items-center gap-8 xl:gap-32.5">
             <div
