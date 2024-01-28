@@ -75,14 +75,14 @@ function Video(){
             className="animate_top w-full md:w-2/5 md:p-7.5 xl:pt-15 relative"
           >
             <div className="relative">
-              <video
+              {/* <video
                 ref={videoRef}
                 className="sm:h-fit w-full h-full object-cover"
                 src="/video/gameplay.webm"
                 autoPlay
                 loop
                 playsInline  // <-- Add this attribute
-              ></video>
+              ></video> */}
               <button
                 onClick={handlePlayPause}
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white rounded-full px-4 py-2 z-10"
