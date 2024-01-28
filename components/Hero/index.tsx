@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
-      {/* {!isDesktop ? (
+      {!isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="swiper testimonial-01 ">
@@ -81,14 +81,7 @@ const Hero = () => {
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                  },
-                }}
+               
               >
                 {placeHolder.map((image, index) => (
                   <SwiperSlide key={index}>
@@ -205,7 +198,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      )} */}
+      )}
     </section>
   );
 };
