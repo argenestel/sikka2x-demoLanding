@@ -13,14 +13,14 @@ const TestimonialSlide = ({ testimonial }) => (
     <div className="flex justify-between border-b border-stroke dark:border-strokedark pb-6 mb-7.5">
       <div>
         <h4 className="flex text-black dark:text-white text-metatitle3 mb-1.5">
-          <Image
+          {/* <Image
             width={40}
             height={40}
             className="flex-auto"
             src={`./images/user/user-01.svg`}
             alt="User"
             loading="lazy"
-          />
+          /> */}
           <div className="ml-2 mt-2">{testimonial.user}</div>
         </h4>
       </div>
