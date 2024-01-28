@@ -86,11 +86,11 @@ const Testimonial = () => (
             }}
           >
             {/* Testimonial Slides */}
-            {testimonials.map((testimonial, index) => (
+            {/* {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <TestimonialSlide testimonial={testimonial} />
               </SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
         </div>
       </div>
