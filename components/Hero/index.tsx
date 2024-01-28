@@ -25,8 +25,8 @@ const Hero = () => {
   }, []);
 
   const placeHolder = [
-    "/images/hero/1.svg",
-    "/images/hero/8.svg",
+    { src: "/images/hero/1.svg", width: 1920, height: 1080 },
+    { src: "/images/hero/8.svg", width: 1920, height: 1080 },
   ];
 
   const aspectRatios = [
@@ -72,7 +72,7 @@ const Hero = () => {
       {!isDesktop ? (
         <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className="swiper testimonial-01 ">
+            <div className="swiper testimonial-01 w-full">
               <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
@@ -88,7 +88,7 @@ const Hero = () => {
                       <div style={{ position: 'relative', paddingTop: `${100 / aspectRatio[1] * aspectRatio[0]}%`, width: '100%' }}>
                         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
                           <Image
-                            src={image}
+                            src={image.src}
                             alt="testimonial"
                             decoding="async"
                             loading="eager"
@@ -109,7 +109,7 @@ const Hero = () => {
       ) : (
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-          <div className="md:w-1/2">
+            <div className="md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5"></h4>
               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 100% Skill Based Cricket Quiz
@@ -183,7 +183,7 @@ const Hero = () => {
                           <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
                             <div style={{ position: 'relative', paddingTop: '133.33%' }} className="w-full">
                               <Image
-                                src={image}
+                                src={image.src}
                                 alt="testimonial"
                                 fill
                                 className="rounded-lg object-cover"
