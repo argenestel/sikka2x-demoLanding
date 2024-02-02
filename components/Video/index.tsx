@@ -75,14 +75,22 @@ function Video(){
             className="animate_top w-full md:w-2/5 md:p-7.5 xl:pt-15 relative"
           >
             <div className="relative">
-              {/* <video
+              <div className="relative">              
+              <Image
+                    src="/video/frame.png"
+                    alt="Mobile Frame"
+                    className="w-full h-auto"
+                    fill
+                  />
+              <video
                 ref={videoRef}
-                className="sm:h-fit w-full h-full object-cover"
-                src="/video/gameplay.webm"
+                className="sm:h-fit w-full h-full object-cover p-6"
+                src="/video/sikkagamevideo.webm"
                 autoPlay
                 loop
                 playsInline  // <-- Add this attribute
-              ></video> */}
+              ></video>
+              </div>
               <button
                 onClick={handlePlayPause}
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white rounded-full px-4 py-2 z-10"
