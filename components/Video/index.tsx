@@ -88,6 +88,7 @@ function Video(){
                 src="/video/sikkagamevideo.webm"
                 autoPlay
                 loop
+                muted
                 playsInline  // <-- Add this attribute
               ></video>
               </div>
