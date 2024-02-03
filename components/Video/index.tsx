@@ -77,14 +77,14 @@ function Video(){
             <div className="relative">
               <div className="relative">              
               <Image
-                    src="/video/frame.png"
+                    src="/video/frame.svg"
                     alt="Mobile Frame"
                     className="w-full h-auto"
                     fill
                   />
               <video
                 ref={videoRef}
-                className="sm:h-fit w-full h-full object-cover p-6"
+                className="sm:h-fit w-full h-full object-cover p-7"
                 src="/video/sikkagamevideo.webm"
                 autoPlay
                 loop

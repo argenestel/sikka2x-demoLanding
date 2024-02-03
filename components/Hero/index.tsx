@@ -26,7 +26,7 @@ const Hero = () => {
 
   const placeHolder = [
     { src: "/images/hero/1.svg", width: 1080 , height: 1700 },
-    { src: "/images/hero/8.svg", width: 1080, height: 1700 },
+    { src: "/images/hero/10.svg", width: 1080, height: 1700 },
   ];
 
   const aspectRatios = [
