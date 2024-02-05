@@ -3,28 +3,27 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { auth, logInWithEmailAndPassword, signInWithGoogle } from "@/firebaseConfig";
-import { useAuthState } from "react-firebase-hooks/auth";
+// simport { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from 'next/navigation'
 import LoadingPage from "../Loading/Loading";
 
 const Tally = () => {
-  const [data, setData] = useState({
-    email: "",
-    password: "",
-  });
-  const [user, loading, error] = useAuthState(auth);
-  const   router = useRouter();
-  useEffect(() => {
-    if (loading) {
-      <LoadingPage />
-      // maybe trigger a loading screen
-      return;
-    }
-    if (user) {
-      router.push("/dashboard")
-  console.log(user)};
-  }, [user, loading]);
+  // const [data, setData] = useState({
+  //   email: "",
+  //   password: "",
+  // });
+  // const [user, loading, error] = useAuthState(auth);
+  // const   router = useRouter();
+  // useEffect(() => {
+  //   if (loading) {
+  //     <LoadingPage />
+  //     // maybe trigger a loading screen
+  //     return;
+  //   }
+  //   if (user) {
+  //     router.push("/dashboard")
+  // console.log(user)};
+  // }, [user, loading]);
 
   return (
     <>
