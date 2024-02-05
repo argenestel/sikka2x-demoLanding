@@ -1,12 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-// import { registerWithEmailAndPassword, signInWithGoogle, auth } from "@/firebaseConfig";
-import { useRouter } from 'next/navigation'
-import { useAuthState } from "react-firebase-hooks/auth";
-import LoadingPage from "../Loading/Loading";
+// import React, { useState, useEffect } from "react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { motion } from "framer-motion";
+// // import { registerWithEmailAndPassword, signInWithGoogle, auth } from "@/firebaseConfig";
+// import { useRouter } from 'next/navigation'
+// import { useAuthState } from "react-firebase-hooks/auth";
+// import LoadingPage from "../Loading/Loading";
 
 const Signup = () => {
 //   const [data, setData] = useState({

@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { motion } from "framer-motion";
 // simport { useAuthState } from "react-firebase-hooks/auth";
-import { useRouter } from 'next/navigation'
-import LoadingPage from "../Loading/Loading";
+// import { useRouter } from 'next/navigation'
+// import LoadingPage from "../Loading/Loading";
 
 const Tally = () => {
   // const [data, setData] = useState({

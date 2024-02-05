@@ -1,12 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-// import { auth, logInWithEmailAndPasswords, signInWithGoogle } from "@/firebaseConfig";
-// import { useAuthState } from "react-firebase-hooks/auth";
-import { useRouter } from 'next/navigation'
-import LoadingPage from "../Loading/Loading";
+// import React, { useState, useEffect } from "react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { motion } from "framer-motion";
+// // import { auth, logInWithEmailAndPasswords, signInWithGoogle } from "@/firebaseConfig";
+// // import { useAuthState } from "react-firebase-hooks/auth";
+// import { useRouter } from 'next/navigation'
+// import LoadingPage from "../Loading/Loading";
 
 const Signin = () => {
 //   const [data, setData] = useState({
