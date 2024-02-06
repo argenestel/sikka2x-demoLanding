@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     
     <html lang="eng">
-      <body className={`dark:bg-black`}>
+      <body className={`dark:bg-black`} suppressHydrationWarning={true}>
         <ThemeProvider
           enableSystem={false}
           attribute="class"

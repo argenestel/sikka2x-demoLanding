@@ -68,7 +68,7 @@ function DownloadNow() {
   return (
     <>
 
-    <div className="fixed bottom-4 right-8 z-[99] xl:hidden md:hidden lg:hidden">
+    <div suppressHydrationWarning={true} className="fixed bottom-4 right-8 z-[99] xl:hidden md:hidden lg:hidden">
       {isModalOpen && <Modal onClose={closeModal} />}
         <div
          
