@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
+import useWindowDimensions from "../Common/useWindowDimension";
 
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -41,72 +42,40 @@ const Hero = () => {
     { height: 2, width: 1 },
     { height: 21, width: 9 },
   ];
+  const { width, height } = useWindowDimensions();
 
-  const updateAspectRatio = useCallback(debounce(() => {
-    const windowWidth = window.innerWidth;
-    const chosenAspectRatio = aspectRatios.find(
-      ratio => windowWidth >= ratio.width * 100
-    );
 
-    if (chosenAspectRatio) {
-      setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
-    }
-  }, 300), []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-      updateAspectRatio();
-    };
+  // const updateAspectRatio = useCallback(debounce(() => {
+  //   const windowWidth = width;
+  //   if(windowWidth != undefined){
+  //   const chosenAspectRatio = aspectRatios.find(
+  //     ratio => windowWidth >= ratio.width * 100
+  //   );
+  //   if (chosenAspectRatio) {
+  //     setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
+  //   }}
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
+   
+  // }, 300), []);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [updateAspectRatio]);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsDesktop(window.innerWidth >= 768);
+  //     updateAspectRatio();
+  //   };
 
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [updateAspectRatio]);
+  if (width && width >= 768) {
   return (
     <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
-      {!isDesktop ? (
-        <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className="swiper testimonial-01 w-full">
-              <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                autoplay={{
-                  delay: 5000,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-              >
-                {placeHolder.map((image, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="bg-transparent shadow-solid-9 dark:shadow-none">
-                      <div style={{ position: 'relative', height: '0', paddingTop: '150%', width: '100%' }}>
-                        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
-                          <Image
-                            src={image.src}
-                            alt="testimonial"
-                            decoding="async"
-                            loading="eager"
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg"
-                            placeholder="empty"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      ) : (
+
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
@@ -199,9 +168,51 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      )}
+        </section>
+
+
+);}else {
+  return(
+    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
+    <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
+      <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+        <div className="swiper testimonial-01 w-full">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+          >
+            {placeHolder.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-transparent shadow-solid-9 dark:shadow-none">
+                  <div style={{ position: 'relative', height: '0', paddingTop: '150%', width: '100%' }}>
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+                      <Image
+                        src={image.src}
+                        alt="testimonial"
+                        decoding="async"
+                        loading="eager"
+   
+                        className="rounded-lg"
+                        placeholder="empty"
+                        fill
+                        
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+    </div>
     </section>
-  );
+      );}
 };
 
 export default Hero;

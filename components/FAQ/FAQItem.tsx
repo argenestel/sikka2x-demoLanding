@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+
 
 type FaqData = {
   activeFaq: number;
@@ -62,7 +61,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
             activeFaq === id ? "block" : "hidden"
           }`}
         >
-          <Markdown remarkPlugins={[remarkGfm]}>{ans}</Markdown>
+         {ans}
         </p>
       </div>
     </>

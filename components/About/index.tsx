@@ -191,6 +191,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
+              <div>
               <Image
                 src="./images/about/about-light-02.svg"
                 alt="About"
@@ -203,6 +204,7 @@ const About = () => {
                 className="hidden dark:block"
                 fill
               />
+              </div>
             </motion.div>
           </div>
         </div>

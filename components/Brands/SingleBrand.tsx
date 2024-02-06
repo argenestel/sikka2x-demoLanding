@@ -13,7 +13,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         className="opacity-100 transition-all duration-300 hover:opacity-90"
         src={imageLight}
         alt={name}
-        layout="responsive"
+
         width={98}
         height={98}
         loading="lazy"

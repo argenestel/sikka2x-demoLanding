@@ -8,13 +8,13 @@ import SectionHeader from "../Common/SectionHeader";
 interface VideoProps {}
 const Video = React.memo(
 function Video(){
-  const videoRef = useRef<HTMLVideoElement>(null);
-  useEffect(() => {
-    const video = videoRef.current;
-    if(video) {
-      video.load();
-    }
-  }, [videoRef]);
+  // const videoRef = useRef<HTMLVideoElement>(null);
+  // useEffect(() => {
+  //   const video = videoRef.current;
+  //   if(video) {
+  //     video.load();
+  //   }
+  // }, [videoRef]);
   const handlePlayPause = () => {
     // const video = videoRef.current;
 
@@ -83,7 +83,7 @@ function Video(){
                     fill
                   />
               <video
-                ref={videoRef}
+                // ref={videoRef}
                 className="sm:h-fit w-full h-full object-cover p-7"
                 src="/video/sikkagamevideo.webm"
                 autoPlay

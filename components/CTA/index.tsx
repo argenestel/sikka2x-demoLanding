@@ -64,7 +64,7 @@ const CTA = () => {
                   className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:opacity-90"
                 >
                   Sign Up for Free
-                  <Image
+                  {/* <Image
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-dark.svg"
@@ -77,7 +77,7 @@ const CTA = () => {
                     src="/images/icon/icon-arrow-light.svg"
                     alt="Arrow"
                     className="hidden dark:block"
-                  />
+                  /> */}
                 </a>
               </div>
             </motion.div>
