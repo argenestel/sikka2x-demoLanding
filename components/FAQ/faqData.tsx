@@ -9,7 +9,7 @@ const faqData = [
   {
     id: 2,
     quest: "Is sikka2x legal? If yes, why it is not on playstore?",
-    ans: "Sikka2x is entirely legal and fully compliant with government regulations. While our previous version remains available on the Play Store, the current version is currently under review. Play Store has temporarily halted the acceptance of new RMG apps in its pilot program, awaiting regulatory implementation. click [_**here**_](https://support.google.com/googleplay/android-developer/answer/12918670?hl=en) for more details."
+    ans: "Sikka2x is entirely legal and fully compliant with government regulations. While our previous version remains available on the Play Store, the current version is currently under review. Play Store has temporarily halted the acceptance of new RMG apps in its pilot program, awaiting regulatory implementation."
   },
   {
     id: 3,
