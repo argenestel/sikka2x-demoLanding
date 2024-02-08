@@ -85,10 +85,14 @@ You have the freedom to manage your cookie preferences through your browser sett
  
 By using Sikka2x, you provide your consent to the practices outlined in this Privacy Policy. We encourage you to read and understand this policy to make informed decisions about your data. If you have any questions or concerns regarding your data or this policy, please feel free to contact us at help@sikka2x.com. 
 </p>
+<h2 className="text-xl font-bold mb-1">11. Refund Policy:</h2>
+<p className="mb-2">
 
+Our refund policy stipulates that we do not offer refunds on deposits made within our application, as Goods and Services Tax (GST) is applicable to the deposited amount. While users retain the option to withdraw their funds, refunds are not permissible under this circumstance.
+</p>
 <br />
 
-This Privacy Policy was last updated on 23 July 2023.
+This Privacy Policy was last updated on 08 Feb 2024.
 
         </div>
     </div>
