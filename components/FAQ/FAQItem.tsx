@@ -20,7 +20,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           onClick={() => {
             handleFaqToggle(id);
           }}
-          className="cursor-pointer flex justify-between items-center font-medium text-metatitle3 text-black dark:text-white py-5 lg:py-7.5 px-6 lg:px-9"
+          className="cursor-pointer flex justify-between items-center font-medium text-metatitle3 text-white dark:text-white py-5 lg:py-7.5 px-6 lg:px-9"
         >
           {quest}
           <Image

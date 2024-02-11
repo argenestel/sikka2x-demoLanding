@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className={`w-full z-99999 py-4 bg-white dark:bg-sikkaMaroon dark:to-sikkaMaroonGrad dark:from-sikkaMaroon transition duration-100`}>
+    <header className={`w-full z-99999 py-4 bg-sikkaMaroon to-sikkaMaroonGrad from-sikkaMaroon dark:bg-sikkaMaroon dark:to-sikkaMaroonGrad dark:from-sikkaMaroon transition duration-100`}>
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <Link href="/">

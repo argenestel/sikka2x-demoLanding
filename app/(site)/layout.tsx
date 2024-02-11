@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     
     <html lang="eng">
-      <body className={`dark:bg-black`} suppressHydrationWarning={true}>
+      <body className={`dark:bg-black bg-black`} suppressHydrationWarning={true}>
         <ThemeProvider
           enableSystem={false}
           attribute="class"
-          // defaultTheme="dark"
+          defaultTheme="dark"
         >
             <Lines />
    

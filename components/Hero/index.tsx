@@ -74,7 +74,7 @@ const Hero = () => {
   // }, [updateAspectRatio]);
   if (width && width >= 768) {
   return (
-    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
+    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
 
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
@@ -149,7 +149,7 @@ const Hero = () => {
                     >
                       {placeHolder.map((image, index) => (
                         <SwiperSlide key={index}>
-                          <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad">
+                          <div className="rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad  bg-gradient-to-b from-sikkaMaroon to-sikkaMaroonGrad">
                             <div style={{ position: 'relative', paddingTop: '133.33%' }} className="w-full">
                               <Image
                                 src={image.src}
@@ -173,7 +173,7 @@ const Hero = () => {
 
 );}else {
   return(
-    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent">
+    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
     <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
       <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
         <div className="swiper testimonial-01 w-full">

@@ -9,10 +9,10 @@ import StarRating from "./Starrating";
 
 // TestimonialSlide Component
 const TestimonialSlide = ({ testimonial }) => (
-  <div className="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark p-9 pt-7.5">
+  <div className="bg-blacksection border border-strokedark rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark p-9 pt-7.5">
     <div className="flex justify-between border-b border-stroke dark:border-strokedark pb-6 mb-7.5">
       <div>
-        <h4 className="flex text-black dark:text-white text-metatitle3 mb-1.5">
+        <h4 className="flex text-white dark:text-white text-metatitle3 mb-1.5">
           {/* <Image
             width={40}
             height={40}
@@ -34,7 +34,7 @@ const TestimonialSlide = ({ testimonial }) => (
 
 // Testimonial component
 const Testimonial = () => (
-  <section className="py-8 dark:bg-gradient-to-b from-transparent via-sikkaMaroon to-transparent">
+  <section className="py-8 bg-gradient-to-b from-transparent via-sikkaMaroon to-transparent dark:bg-gradient-to-b dark:from-transparent dark:via-sikkaMaroon dark:to-transparent">
     <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
       {/* Section Title */}
       <div className="animate_top text-center mx-auto">

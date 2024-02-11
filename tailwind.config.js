@@ -9,14 +9,15 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+  darkMode: 'media',
+    theme: {
     fontFamily: {
       inter: ["Inter", "sans-serif"],
     },
     colors: {
       current: "currentColor",
       transparent: "transparent",
-      stroke: "#EEEEEE",
+      stroke: "#2D2F40",
       strokedark: "#2D2F40",
       hoverdark: "#252A42",
       titlebg: "#ADFFF8",
@@ -32,7 +33,7 @@ module.exports = {
       meta: "#20C5A8",
       waterloo: "#757693",
       manatee: "#999AA1",
-      alabaster: "#FBFBFB",
+      alabaster: "#181C31",
       zumthor: "#EDF5FF",
       socialicon: "#D1D8E0",
       sikkaMaroon: "#590101",

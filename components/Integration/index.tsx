@@ -58,7 +58,7 @@ const Integration = () => {
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
-              <div className="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+              <div className="inline-block rounded-[10px] shadow-solid-7 bg-btndark dark:bg-btndark p-4.5">
                 <Image
                   width={50}
                   height={50}
