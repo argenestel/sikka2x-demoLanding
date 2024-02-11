@@ -17,7 +17,7 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
   return (
     <div className="text-center mx-auto">
       <div className="  dark:bg-gradient-to-r dark:from-sikkaGold2 dark:via-sikkaGold3 dark:to-sikkaGold dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4 bg-gradient-to-r from-sikkaGold2 via-sikkaGold3 to-sikkaGold border border-strokedark">
-        <h4 className="text-sectiontitle text-white dark:text-sikkaMaroon font-bold">
+        <h4 className="text-sectiontitle text-sikkaMaroon dark:text-sikkaMaroon font-bold">
           {title}
         </h4>
       </div>
