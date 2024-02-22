@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import useWindowDimensions from "../Common/useWindowDimension";
+import Link from "next/link";
 
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -79,8 +80,8 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
-              <h4 className="text-black dark:text-white text-lg font-medium mb-4.5"></h4>
-              <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
+              <h4 className="text-white text-lg font-medium mb-4.5"></h4>
+              <h1 className="text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 100% Skill Based Cricket Quiz
                 <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">Career</span>
               </h1>
@@ -90,16 +91,18 @@ const Hero = () => {
               <div className="mt-10">
                 <form>
                   <div className="flex flex-wrap gap-5">
-                    <div
+                    <Link
                       aria-label="signup to newsletter"
                       className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5"
-                      onClick={() => console.log('clicked')}
+                      // onClick={() => console.log('clicked')}
+                      href="/apk/sikka.apk"
+                      
                     >
                       <IoLogoAndroid className="w-7 h-7 mr-2.5" />Download Now
-                    </div>
+                    </Link>
                   </div>
                 </form>
-                <p className="text-black dark:text-white mt-5">Try Today 100% Safe and Secure</p>
+                <p className="text-white mt-5">Try Today 100% Safe and Secure</p>
               </div>
             </div>
             <div className="animate_right md:w-1/2 hidden lg:block">
