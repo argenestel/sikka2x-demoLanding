@@ -83,10 +83,10 @@ const Hero = () => {
               <h4 className="text-white text-lg font-medium mb-4.5"></h4>
               <h1 className="text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
                 100% Skill Based Cricket Quiz
-                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">Career</span>
+                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">Game</span>
               </h1>
               <p>
-                <strong>5 ka 10 in 10 seconds</strong>
+                <strong className="text-sikkaGold">5 ka 10 in 10 seconds</strong>
               </p>
               <div className="mt-10">
                 <form>
