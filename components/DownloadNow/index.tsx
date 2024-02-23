@@ -26,8 +26,8 @@ function DownloadNow() {
     }, 10000); // Simulated 2 seconds download time
     setIsModalOpen(true);
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/apk/sikka.apk";
-    downloadLink.download = "sikka.apk";
+    downloadLink.href = "/apk/Sikka2x.apk";
+    downloadLink.download = "Sikka2x.apk";
     downloadLink.click();
   };
   const closeModal = () => {

@@ -95,7 +95,7 @@ const Hero = () => {
                       aria-label="signup to newsletter"
                       className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5"
                       // onClick={() => console.log('clicked')}
-                      href="/apk/sikka.apk"
+                      href="/apk/Sikka2x.apk"
                       
                     >
                       <IoLogoAndroid className="w-7 h-7 mr-2.5" />Download Now
