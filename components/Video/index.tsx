@@ -85,7 +85,7 @@ function Video(){
               <video
                 // ref={videoRef}
                 className="sm:h-fit w-full h-full object-cover p-7"
-                src="/video/sikkagamevideo.webm"
+                src="/video/game_play.webm"
                 autoPlay
                 loop
                 muted
