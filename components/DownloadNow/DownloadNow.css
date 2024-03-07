@@ -50,7 +50,7 @@
   color: #fff;
   background: linear-gradient(90deg, #B2FF59, #76FF03); /* Light green to shiny green */
   border: 2px solid transparent;
-  border-image: linear-gradient(90deg, #B2FF59, #76FF03); /* Border gradient */
+  border-image: linear-gradient(90deg, #7ED56F, #28B485); /* Border gradient */
   border-image-slice: 1;
   animation: rotateBorder 5s linear infinite; /* Rotate over 5 seconds, adjust as needed */
 }
