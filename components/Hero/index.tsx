@@ -4,7 +4,6 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 import { IoLogoAndroid } from "react-icons/io5";
 import { debounce } from 'lodash';
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -27,65 +26,24 @@ const Hero = () => {
   }, []);
 
   const placeHolder = [
-    { src: "/images/hero/1.svg", width: 1080 , height: 1700 },
+    { src: "/images/hero/1.svg", width: 1080, height: 1700 },
     { src: "/images/hero/10.svg", width: 1080, height: 1700 },
   ];
 
-  const aspectRatios = [
-    { height: 16, width: 9 },
-    { height: 18, width: 9 },
-    { height: 19, width: 9 },
-    { height: 19.5, width: 9 },
-    { height: 20, width: 9 },
-    { height: 4, width: 3 },
-    { height: 1, width: 1 },
-    { height: 9, width: 16 },
-    { height: 2, width: 1 },
-    { height: 21, width: 9 },
-  ];
   const { width, height } = useWindowDimensions();
 
-
-
-  // const updateAspectRatio = useCallback(debounce(() => {
-  //   const windowWidth = width;
-  //   if(windowWidth != undefined){
-  //   const chosenAspectRatio = aspectRatios.find(
-  //     ratio => windowWidth >= ratio.width * 100
-  //   );
-  //   if (chosenAspectRatio) {
-  //     setAspectRatio([chosenAspectRatio.height, chosenAspectRatio.width]);
-  //   }}
-
-   
-  // }, 300), []);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsDesktop(window.innerWidth >= 768);
-  //     updateAspectRatio();
-  //   };
-
-  //   handleResize();
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, [updateAspectRatio]);
   if (width && width >= 768) {
-  return (
-    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
-
+    return (
+      <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
               <h4 className="text-white text-lg font-medium mb-4.5"></h4>
-              <h1 className="text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
+              <h1 className="text-white text-4xl xl:text-5xl font-bold mb-5 pr-16">
                 100% Skill Based Cricket Quiz
-                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">Game</span>
+                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5">Game</span>
               </h1>
-              <p>
+              <p className="text-white text-xl mb-8">
                 <strong className="text-sikkaGold">5 ka 10 in 10 seconds</strong>
               </p>
               <div className="mt-10">
@@ -93,10 +51,8 @@ const Hero = () => {
                   <div className="flex flex-wrap gap-5">
                     <Link
                       aria-label="signup to newsletter"
-                      className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5"
-                      // onClick={() => console.log('clicked')}
+                      className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5 text-lg"
                       href="/apk/Sikka2x.apk"
-                      
                     >
                       <IoLogoAndroid className="w-7 h-7 mr-2.5" />Download Now
                     </Link>
@@ -106,7 +62,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="animate_right md:w-1/2 hidden lg:block">
-              <div className="relative 2xl:-mr-7.5">
+            <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
@@ -128,94 +84,94 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full">
-                  <div className="swiper testimonial-01 pb-22.5 mb-20">
-                    <Swiper
-                      spaceBetween={50}
-                      slidesPerView={1}
-                      autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                      }}
-                      pagination={{
-                        clickable: true,
-                      }}
-                      modules={[Autoplay, Pagination]}
-                      breakpoints={{
-                        0: {
-                          slidesPerView: 1,
-                        },
-                        768: {
-                          slidesPerView: 2,
-                        },
-                      }}
-                    >
-                      {placeHolder.map((image, index) => (
-                        <SwiperSlide key={index}>
-                          <div className="rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad  bg-gradient-to-b from-sikkaMaroon to-sikkaMaroonGrad">
-                            <div style={{ position: 'relative', paddingTop: '133.33%' }} className="w-full">
+              <div className="relative aspect-[700/444] w-full">
+                <div className="swiper testimonial-01 pb-22.5 mb-20">
+                  <Swiper
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Autoplay, Pagination]}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                      },
+                      768: {
+                        slidesPerView: 2,
+                      },
+                    }}
+                  >
+                    {placeHolder.map((image, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="rounded-lg shadow-solid-9 dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:to-sikkaMaroonGrad bg-gradient-to-b from-sikkaMaroon to-sikkaMaroonGrad">
+                          <div style={{ position: 'relative', paddingTop: '133.33%' }} className="w-full ">
+                            <div className=" inset-0 flex items-end top-0">
                               <Image
                                 src={image.src}
                                 alt="testimonial"
                                 fill
-                                className="rounded-lg object-cover"
+                                className="rounded-lg top-0  w-full"
                               />
                             </div>
                           </div>
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </section>
-
-
-);}else {
-  return(
-    <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
-    <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
-      <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-        <div className="swiper testimonial-01 w-full">
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
-          >
-            {placeHolder.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-transparent shadow-solid-9 dark:shadow-none">
-                  <div style={{ position: 'relative', height: '0', paddingTop: '150%', width: '100%' }}>
-                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
-                      <Image
-                        src={image.src}
-                        alt="testimonial"
-                        decoding="async"
-                        loading="eager"
-   
-                        className="rounded-lg"
-                        placeholder="empty"
-                        fill
-                        
-                      />
+      </section>
+    );
+  } else {
+    return (
+      <section className="pt-0 md:pt-36 xl:pt-36 pb-10 xl:pb-25 overflow-hidden dark:shadow-none dark:bg-gradient-to-b dark:from-sikkaMaroon dark:via-sikkaMaroonGrad dark:to-transparent shadow-none bg-gradient-to-b from-sikkaMaroon via-sikkaMaroonGrad to-transparent">
+        <div className="mx-auto max-w-c-1390 px-02 md:px-4 2xl:px-0">
+          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+            <div className="swiper testimonial-01 w-full">
+              <Swiper
+                spaceBetween={0}
+                slidesPerView={1}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
+              >
+                {placeHolder.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="bg-transparent shadow-solid-9 dark:shadow-none">
+                      <div style={{ position: 'relative', height: '0', paddingTop: '150%', width: '100%' }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+                          <Image
+                            src={image.src}
+                            alt="testimonial"
+                            decoding="async"
+                            loading="eager"
+                            className="rounded-lg"
+                            placeholder="empty"
+                            fill
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </section>
-      );}
+      </section>
+    );
+  }
 };
 
 export default Hero;

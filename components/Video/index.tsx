@@ -1,35 +1,15 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "../Common/SectionHeader";
+import Link from "next/link";
+import { IoLogoAndroid } from "react-icons/io5";
 
-// Define types for props if needed
-interface VideoProps {}
-const Video = React.memo(
-function Video(){
-  // const videoRef = useRef<HTMLVideoElement>(null);
-  // useEffect(() => {
-  //   const video = videoRef.current;
-  //   if(video) {
-  //     video.load();
-  //   }
-  // }, [videoRef]);
-  const handlePlayPause = () => {
-    // const video = videoRef.current;
-
-    // if (video) {
-    //   if (video.paused) {
-    //     video.play();
-    //   } else {
-    //     video.pause();
-    //   }
-    // }
-  };
-
+const Video = React.memo(function Video() {
   return (
     <>
-      <section id="support" className="px-4 md:px-8 2xl:px-0">
+      <section id="support" className="px-4 md:px-8 2xl:px-0 bg-gradient-to-b pt-10 from-[#24283E] to-[#252A42] dark:bg-gradient-to-b dark:from-[#24283E] dark:to-[#252A42]">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           <div className="animate_top text-center mx-auto">
             <SectionHeader
@@ -42,7 +22,6 @@ function Video(){
           </div>
         </div>
         <div className="mx-auto max-w-c-1390 relative pt-10 lg:pt-15 xl:pt-20 px-7.5 lg:px-15 xl:px-20 overflow-hidden">
-          <div className="absolute -z-1 rounded-lg left-0 top-0 w-full h-2/3 bg-gradient-to-t from-[#24283E] to-[#252A42] dark:bg-gradient-to-t dark:from-[#24283E] dark:to-[#252A42]"></div>
           <div className="absolute -z-1 bottom-[-255px] left-0 w-full h-full">
             <Image
               src="./images/shape/shape-dotted-light.svg"
@@ -57,49 +36,90 @@ function Video(){
               fill
             />
           </div>
-          <motion.div
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: -20,
-              },
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
-            initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 2, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="animate_top w-full md:w-2/5 md:p-7.5 xl:pt-15 relative"
-          >
-            <div className="relative">
-              <div className="relative">              
-              <Image
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 2, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_top w-full md:w-2/5 md:p-7.5 xl:pt-15 relative"
+            >
+              <div className="relative">
+                <div className="relative w-full h-0" style={{ paddingBottom: "177.78%" }}>
+
+                  <video
+                    className="absolute top-0 left-0 w-full h-full object-cover p-7"
+                    src="/video/game_play.webm"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  ></video>
+                                    <Image
                     src="/video/frame.svg"
                     alt="Mobile Frame"
-                    className="w-full h-auto"
+                    className="absolute top-0 left-0 w-full h-auto"
                     fill
                   />
-              <video
-                // ref={videoRef}
-                className="sm:h-fit w-full h-full object-cover p-7"
-                src="/video/game_play.webm"
-                autoPlay
-                loop
-                muted
-                playsInline  // <-- Add this attribute
-              ></video>
+                </div>
               </div>
-              {/* <button
-                onClick={handlePlayPause}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white rounded-full px-4 py-2 z-10"
-              >
-                Play/Pause
-              </button> */}
-            </div>
-          </motion.div>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 20,
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 2, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="animate_top w-full md:w-1/2 mt-10 md:mt-0 md:pl-10"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                Match, Compete, and Earn with Cricket Quiz App
+              </h2>
+              <p className="text-lg text-gray-300 mb-8">
+                Put your cricket knowledge to the test and challenge players from around the world in this exciting quiz app. Answer questions, climb the leaderboard, and earn rewards for your skills. Whether you're a die-hard fan or a casual enthusiast, there's something for everyone in this thrilling cricket quiz experience.
+              </p>
+              <div className="flex items-center">
+              <Link
+                      aria-label="signup to newsletter"
+                      className="zooming-element shining-button flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-15 py-2.5 text-lg"
+                      href="/apk/Sikka2x.apk"
+                    >
+                      <IoLogoAndroid className="w-7 h-7 mr-2.5" />Download Now
+                    </Link>
+                {/* <a
+                  href="#"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full mr-6"
+                >
+                  Download Now
+                </a> */}
+                {/* <a
+                  href="#"
+                  className="text-white font-bold py-3 px-6 rounded-full border border-white hover:bg-white hover:text-blue-500 transition duration-300"
+                >
+                  Learn More
+                </a> */}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
     </>
