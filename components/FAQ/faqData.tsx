@@ -4,7 +4,7 @@ const faqData = [
   {
     id: 1,
     quest: "What is sikka2x?",
-    ans: "Sikka2x is India’s first cricket quiz app to earn real money. Users play against each other answering questions to win real money. It proudly introduces itself as the market's first zero-commission app."
+    ans: "Sikka2x is an interactive cricket strategy app where players compete against each other in real-time matches. Users strategize their shots to score runs and outplay their opponents in limited over match."
   },
   {
     id: 2,
@@ -19,18 +19,13 @@ const faqData = [
   {
     id: 4,
     quest: "How do I win on Sikka2x?",
-    ans: "Sikka2x now includes a 2-player mapping feature, where players are paired randomly and are presented with same question in real time. The player who provides the correct answer first wins the game."
+    ans: "To win on Sikka2x, score more runs than your opponent by planning strategic shots based on their probabilities."
   },
   {
     id: 5,
     quest: "What if there is a tie between two players?",
     ans: "In the event of a tie, the contested amount will be refunded to the player’s wallets without any deductions or winnings."
-  },
-  {
-    id: 6,
-    quest: "What is streak bonus on sikka2x?",
-    ans: "Sikka2x rewards top players with an additional amount for winning three consecutive games (questions). Presently, the bonus is ₹5 for each streak, subject to variation. The streak bonus is eligible for withdrawal."
-  },
+  }
 ];
 
 export default faqData;

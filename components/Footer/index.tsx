@@ -45,10 +45,10 @@ const Footer = () => {
                     className="hidden dark:block"
                   />
                 </a>
-
+{/* 
                 <p className="mt-5 mb-10">
                 Zero Commission App
-                </p>
+                </p> */}
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
                   contact

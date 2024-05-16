@@ -24,7 +24,7 @@ import Analytics from "@/components/Analytics";
 
 export const metadata: Metadata = {
   title: "Sikka2x - Win 2x every 10 seconds",
-  description: "Play Cricket Quiz every 10 second and win 2x. Truly Zero Commission Game. Play Now!",
+  description: "Play Cricket every 10 second and win 2x. Play Now!",
   keywords: ["cricket quiz", "win cash", "skill based game", "sikka", "earn money games"]  // Add more metadata properties as needed
 };
 

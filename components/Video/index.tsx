@@ -59,7 +59,7 @@ const Video = React.memo(function Video() {
 
                   <video
                     className="absolute top-0 left-0 w-full h-full object-cover p-7"
-                    src="/video/gameplay.webm"
+                    src="/video/gamr.mp4Z"
                     autoPlay
                     loop
                     muted
@@ -93,10 +93,10 @@ const Video = React.memo(function Video() {
 >
   <div className="hidden md:block">
     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-      Match, Compete, and Earn with Cricket Quiz App
+     Play Smart and Win Big
     </h2>
     <p className="text-lg text-gray-300 mb-8">
-      Put your cricket knowledge to the test and challenge players from around the world in this exciting quiz app. Answer questions, climb the leaderboard, and earn rewards for your skills. Whether you're a die-hard fan or a casual enthusiast, there's something for everyone in this thrilling cricket quiz experience.
+    Play cricket against real opponents online. Plan your shots wisely to score more runs than your opponent. With every ball, make smart decisions based on shot probabilities.
     </p>
   </div>
   <div className="flex items-center">
