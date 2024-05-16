@@ -94,8 +94,8 @@ Zero Commission app</div> */}
   
       <span className="ml-2">{isLoading ? "Downloading..." : "Download Now"}</span>
       </div>
-      <div className='text-white  text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
-Get ₹10 Free</div>
+      {/* <div className='text-white  text-lg mx-auto text-center font-bold blinking-text ' style={{ userSelect: "none" }}>
+Get ₹10 Free</div> */}
             <div className="flex justify-around">
           {/* 100% Secure */}
           <div className="flex flex-row items-center text-white text-sm">

@@ -59,7 +59,7 @@ const Video = React.memo(function Video() {
 
                   <video
                     className="absolute top-0 left-0 w-full h-full object-cover p-7"
-                    src="/video/gamr.mp4Z"
+                    src="/video/gamr.mp4"
                     autoPlay
                     loop
                     muted
